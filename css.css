@@ -1,0 +1,157 @@
+/*Jimmy Yuan*/
+body {
+	font-family:Helvetica;
+}
+p dd{
+	font-family:Helvetica;
+	font-size:20px;
+}
+h1{
+	text-align:center;
+	font-size:80px;
+}
+h2{
+	text-align:center;
+	font-size:60px;
+}
+h3{
+	text-align:center;
+	font-size:30px;
+}
+.menu {
+    border:none;
+    background:none;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    height: 3.5em;
+    width: 3.5em;
+    background-color: #111;
+    position: fixed;
+    left: 50%;
+    margin-left: -1.75em;
+    bottom: -1.75em;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 11
+}
+.menu:hover, .menu:active, .menu:focus{
+    background-color: #222;
+}
+
+.hidnav{
+	display:none;
+	z-index:10;
+	text-align:center;
+	vertical-align:center;
+	width:55%;
+	/*background:rgba(0,74,232,1);*/
+	height:auto;
+	margin:auto;
+	border-radius:5px; 
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px;
+	padding:5% 0;
+	line-height:100px;
+    position: relative;
+    text-decoration:none;
+    padding:1% 0;
+    margin-bottom:50px;
+    white-space: nowrap;
+}
+.button{
+    font-size: 50px;  
+    margin-bottom:5px;
+    display: inline-block;
+    position: relative;
+}
+.button a{
+	display: block;
+	text-decoration:none;
+	text-shadow: 0px 0px 1px #fff;
+	color: rgba(00,00,00,.1);
+	padding:35px;
+	margin: 2px;
+	background: rgba(00,00,00,.1);
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.button:hover a{
+	text-shadow: 0px 0px 10px #fff;
+	background: rgba(0,0,0,0.2);
+}
+.button a:hover{
+	background: rgba(00,00,00,.8);
+	text-shadow: 0px 0px 1px #fff;
+}
+
+#shadow{
+	width:100%
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    opacity:0;
+    background:black;
+    transition: all .3s ease;
+    z-index:2;
+}
+#welcome
+{
+	display:none;
+	width:60%;
+	background:white;
+	min-height:500px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#about
+{
+	text-align:center;
+	width:60%;
+	background:white;
+	min-height:500px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#professional
+{
+	display:none;
+	width:60%;
+	text-align:center;
+	background:white;
+	min-height:500px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#casual
+{
+	text-align:center;
+	display:none;
+	width:60%;
+	background:white;
+	min-height:500px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+.welcome
+{
+	text-align:center;
+}
+li
+{
+	list-style:none;
+}
