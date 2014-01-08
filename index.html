@@ -9,14 +9,21 @@
         <script src="script.js"></script>
         <link rel="icon" type="image/png" href="images/shibe.png">
     </head>
-    <body>
+    <body id = "body">
     	<h1>The Jimmy Yuan</h1>
 		<button class="menu" id="menu" onclick ="loadMenu();">+</button>
+		<button class="theme" id="theme" onclick ="themeMenu();">T</button>
 		<div class="hidnav" id="hidnav">
 			<ul>
 		    	<span class = "button" onclick="loadBox('about')"><a href ="#about">About</a></span>
 		        <span class = "button" onclick="loadBox('professional')"><a href ="#professional">Professional</a></span>
 			    <span class = "button" onclick="loadBox('casual')"><a href ="#casual">Casual</a></span>
+			</ul>
+		</div>
+		<div class="hidnav" id="themeChoose">
+			<ul>
+		    	<span class = "button" onclick="changeTheme('blue')"><a href ="#b">BlueWhite</a></span>
+		        <span class = "button" onclick="changeTheme('black')"><a href ="#d">BlackWhite</a></span>
 			</ul>
 		</div>
 		<!--<div id = "welcome">

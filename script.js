@@ -17,6 +17,21 @@ function loadMenu()
 	document.getElementById("hidnav").style.display = "block";
 	}
 }
+function themeMenu()
+{
+	if(loaded == "true")
+	{
+		loaded = "false";
+		document.getElementById("shadow").style.opacity = "0";
+		document.getElementById("themeChoose").style.display = "none";
+	}
+	else{
+	loaded = "true";
+	document.getElementById("shadow").style.background = "black";
+	document.getElementById("shadow").style.opacity = ".5";
+	document.getElementById("themeChoose").style.display = "block";
+	}
+}
 function loadBox(input)
 {
 	box = input;
@@ -26,20 +41,17 @@ function loadBox(input)
 	document.getElementById(box).style.display = "block";
 	loadMenu();
 }
-function loadAlert()
+function changeTheme(input)
 {
-	if(loaded == "true")
+	color = input;
+	if(color == 'blue')
 	{
-		loaded = "false";
-		document.getElementById("shadow").style.opacity = "0";
-		document.getElementById("alert").style.display = "none";
+		document.getElementById("body").style.background = "cornflowerblue";
+		document.getElementById("body").style.color = "white";
 	}
 	else{
-	loaded = "true";
-	document.getElementById("shadow").style.background = "black";
-	document.getElementById("shadow").style.opacity = ".5";
-	document.getElementById("alert").style.display = "block";
+		document.getElementById("body").style.background = "black";
+		document.getElementById("body").style.color = "white";
 	}
+	themeMenu();
 }
-
-

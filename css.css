@@ -1,6 +1,8 @@
 /*Jimmy Yuan*/
 body {
 	font-family:Helvetica;
+	background:white;
+	color:black;
 }
 p dd{
 	font-family:Helvetica;
@@ -106,7 +108,6 @@ h3{
 {
 	display:none;
 	width:60%;
-	background:white;
 	min-height:500px;
 	position:relative;
 	margin-left:auto;
@@ -117,7 +118,6 @@ h3{
 {
 	text-align:center;
 	width:60%;
-	background:white;
 	min-height:500px;
 	position:relative;
 	margin-left:auto;
@@ -129,7 +129,6 @@ h3{
 	display:none;
 	width:60%;
 	text-align:center;
-	background:white;
 	min-height:500px;
 	position:relative;
 	margin-left:auto;
@@ -141,7 +140,6 @@ h3{
 	text-align:center;
 	display:none;
 	width:60%;
-	background:white;
 	min-height:500px;
 	position:relative;
 	margin-left:auto;
@@ -154,4 +152,24 @@ h3{
 li
 {
 	list-style:none;
+}
+.theme
+{
+	border:none;
+    background:none;
+    color: cornflowerblue;
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 1.5em;
+    height: 3.5em;
+    width: 3.5em;
+    position: fixed;
+    left: 0%;
+    bottom: -1.75em;
+    cursor: pointer;
+    z-index: 11
+}
+.theme:hover, .theme:active{
+    background-color: white;
+    color:gray;
 }
