@@ -16,4 +16,12 @@ function startMenu()
 	
 }
 
-
+function getTheDay()
+{
+	date = new Date();
+	month = date.getMonth() + 1;
+	day = date.getDate();
+	year = date.getFullYear();
+	document.getElementById("date").innerHTML = month + "/" + day + "/" + year;
+}
+			

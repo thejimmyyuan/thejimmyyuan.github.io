@@ -61,4 +61,8 @@ body {
 	border-radius:1px;
 	
 }
-
+.time{
+	color:white;
+	right:20px;
+	position:absolute;
+}

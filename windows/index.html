@@ -17,10 +17,16 @@
 
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-	</head>
-	<body>
+		<script>
+			setInterval(function(){document.getElementById("time").innerHTML = (new Date()).toLocaleTimeString();}, 1000);	
+		</script>
+	<body onload="getTheDay();">
 		<button class="start" id="start" onclick ="startMenu()">Start</button>
-		<div class = "taskbar"></div>
+		<div class = "taskbar">	
+		<span class = "time" id = "time">Loading</span>
+		<br />
+		<span class = "time" id = "date" onload="getTheDay();">Loading</span>
+		</div>
 		<div class="menu" id="menu">
 			<div class="sHeader"><img class = "portrait" src = "images/portrait.png" /></div>
 		</div>
