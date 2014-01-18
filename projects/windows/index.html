@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>The Jimmy Yuan</title>
+		<link rel="stylesheet" type="text/css"href="css.css">
+        <script src="script.js"></script>
+        <link rel="icon" type="image/png" href="images/shibe.png">
+		<meta name="description" content="" />
+		<meta name="author" content="Jimmy Yuan" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<script>
+			setInterval(function(){document.getElementById("time").innerHTML = (new Date()).toLocaleTimeString();}, 1000);	
+		</script>
+	<body onload="getTheDay();">
+		<div id = "desktop" onclick="closeSystem();"> 
+		<!--	<div class = "app">
+				<img src = "images/windowsexplorer.png" class = "icon"/>
+				<br/>
+				<span class = "icontext">Explorer</span>
+		</div>-->
+		<div id = "explorer" >
+			<div id = "title" onmousedown="drag('explorer', event);"><div class = "title" ><img src = "images/shibe.png"/>Window's Explorer</div>
+				<div class = "options">
+					<button class = "minimax">_</button>
+					<button class = "minimax">O</button>
+					<button class = "close" onclick="closeApp('explorer','expIcon')">X</button>
+				</div>
+				
+			</div>
+			<div id = "info">
+				
+			</div>
+		</div>
+		
+		</div>
+		
+		<button class="start" id="start" onclick ="startMenu()">Start</button>
+		<div class = "taskbar">	
+			<div class = "app">
+				<img id = "expIcon" onclick = "openExplorer();"src = "images/windowsexplorer.png" class = "icon" style = "left:90px;"/>
+			</div>
+		<span class = "time" id = "time">Loading</span>
+		<br />
+		<span class = "time" id = "date" onload="getTheDay();">Loading</span>
+		</div>
+		<div class="menu" id="menu">
+			<div class="sHeader"><img class = "portrait" src = "images/portrait.png" /></div>
+			<div class = "programs">
+				<span class = "button">FireFox</span>
+				<span class = "button">Aptana Studios</span>
+				<span class = "button">GitHub</span>
+				<hr />
+				<span class = "button">Steam</span>
+				<span class = "button">League of Legends</span>
+				<span class = "button">StarCraft II</span>
+				<span class = "button">BattleField 3</span>
+			</div>
+		<div class = "right">
+			<span class = "drkButton" style = "top:50px;" onclick="">Jimmy Yuan</span>
+			<span class = "drkButton" style = "top:100px;" onclick="">Projects</span>
+			<span class = "drkButton" style = "top:150px;" onclick="">Documents</span>
+			<span class = "drkButton" style = "top:200px;" onclick="">Music</span>
+			
+			<span class = "drkButton" style = "bottom:0px;" onclick="window.close();">Shut Down</span>
+		</div>
+		</div>	
+	</body>
+</html>

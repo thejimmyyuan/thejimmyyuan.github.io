@@ -1,0 +1,248 @@
+body {
+	font-family:segoe ui;
+	z-index: 1;
+	height:100%;
+    width:100%;
+}
+hr
+{
+	width:95%;
+}
+#desktop
+{
+	background-image:url('images/wallpaper.jpg');
+	background-size:1920px 1080px;
+	background-repeat:no-repeat;
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    height:100%;
+    width:100%;
+}
+.taskbar{
+	box-shadow: inset 0 20px rgba(255,255,255,0.2),inset 0 -15px 30px rgba(0,0,0,0.4),0 5px 10px rgba(0,0,0,0.5);
+	border-color:#D1D1D1;
+	border-top-style:solid;
+	border-width:1px;
+	height:40px;
+	width:100%;
+	position: fixed;
+	bottom: 0px;
+	left:0px;
+	z-index:1;
+}
+.start
+{
+	border-style:solid;
+	border-width:1px;
+	background:transparent;
+    color: white;
+    font-size: 1.5em;
+    height: 40px;
+    width: 80px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    border-radius:2px;
+    z-index: 2;
+}
+.start:hover{
+	box-shadow: 0px 0px 20px 5px #FFF;
+}
+.start:active{
+	box-shadow: 0px 0px 20px 5px #FFF inset;
+}
+.menu{
+	display:none;
+	border-style:solid;
+	border-color:white;
+	border-width:1px;
+	background: rgba(255,255,255,0.2);
+	height:500px;
+	width:400px;
+	position: fixed;
+	left: 0px;
+    bottom: 40px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    box-shadow: inset 0 470px rgba(255,255,255,0.2),inset 0 -15px 30px rgba(255,255,255,0.4),0 5px 10px rgba(255,255,255,0.5);
+    z-index:2;
+   
+}
+.portrait
+{
+	right:60px;
+	top:-30px;
+	position:absolute;
+	box-shadow: 0px 0px 0px 5px #FFF;
+	border-radius:1px;
+	z-index:3;
+	
+}
+.time{
+	font-family:segoe ui;
+	font-size:14px;
+	color:white;
+	right:20px;
+	position:absolute;
+}
+.programs{
+	background:white;
+	top:5px;
+	left:5px;
+	height:484px;
+	width:250px;
+	border-style:solid;
+	border-width:1px;
+	border-color:white;
+	border-radius:5px;
+	position:absolute;
+}
+.button{
+	display:block;
+	width:240px;
+	margin-left:0px;
+	text-decoration:none;
+	color:white;
+	padding:5px;
+	padding-bottom:10px;
+	background:white;
+	z-index:3;
+	cursor: pointer;
+	color:black;
+}
+
+.button:hover{
+	background:cornflowerblue;
+	color:white;
+}
+.right
+{
+	background: rgba(0,0,0,0.7);
+	top:5px;
+	right:5px;
+	height:484px;
+	width:135px;
+	border-style:solid;
+	border-width:1px;
+	border-color:white;
+	border-radius:5px;
+	position:absolute;
+}
+.drkButton{
+	display:block;
+	width:125px;
+	margin-left:0px;
+	text-decoration:none;
+	color:white;
+	padding:5px;
+	background:transparent;
+	z-index:3;
+	cursor: pointer;
+	color:white;
+	position:absolute;
+}
+
+.drkButton:hover{
+	box-shadow: inset 0 17px rgba(255,255,255,0.2),inset 0 -15px 30px rgba(0,0,0,0.4),0 5px 10px rgba(0,0,0,0.5);	
+	color:white;
+}
+.icon
+{
+	width:40px;
+	position:absolute;
+	bottom:0px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.icon:hover
+{
+ 	outline:1px solid rgba(255,255,255,.7);
+
+}
+.icon:active{
+	box-shadow: 0px 0px 20px 5px #FFF inset;
+}
+#explorer
+{
+	display:none;
+	position:absolute;
+	top:50px;
+	left:400px;
+	width:600px;
+	height:500px;
+	box-shadow: inset 0 350px rgba(255,255,255,0.2),inset 0 -15px 30px rgba(255,255,255,0.4),0 5px 10px rgba(255,255,255,0.5);
+	border: 1px solid rgba(2, 3, 4, 0.86);
+	border-radius:6px;
+	box-shadow: 0px 0px 10px 1px #000;
+}
+#explorer #title
+{
+	width:100%;
+	height:30px;
+	margin-left:5px;
+	font-size:12px;
+	
+}
+#explorer #info
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:580px;
+	height:457px;
+	background:white;
+	border-style:solid;
+	border-color:white;
+	border-radius:2px;
+}
+
+.title{
+	padding-top:5px;
+}
+.options
+{
+	float:right;
+	margin-right:10px;
+	display:inline;
+	margin-top:-23px;
+	}
+.options button
+{
+	background-color: white; 
+	border: none; 
+	border-bottom-left-radius: 4px; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+	float: left; 
+	font-size: 10px; 
+	font-weight: bold; 
+	height: 19px; 
+	margin: 0 1px 1px;
+	padding: 0;
+}
+.minimax
+{
+	box-shadow: 0px 0px 0px 1px rgba(212, 216, 221, 0.8) inset, 0px 0px 0px 1px rgba(40, 43, 44, 0.8);
+	width: 27px;
+	background: linear-gradient(rgba(221,223,226,0.80), rgba(188,191,184,0.74) 50%, rgba(119,124,127,0.64) 55%, rgba(165,163,176,0.7));
+	
+}
+.minimax:hover
+{
+	box-shadow: 0 0 10px 2px white;
+	
+}
+.close
+{
+	box-shadow: inset 0 0 0 1px rgba(212,216,221,0.8), 0 0 0 1px rgba(28,32,23,0.8); 
+	width: 46px;
+	background: linear-gradient(rgba(225,168,159,0.91), rgba(195,114,104,0.91) 50%, rgba(170,52,36,0.91) 55%, rgba(187,111,94,0.91));
+}
+.close:hover 
+{
+	box-shadow: 0 0 10px 2px red;
+	
+}
+
