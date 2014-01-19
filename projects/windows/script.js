@@ -40,12 +40,22 @@ function getTheDay()
 	document.getElementById("date").innerHTML = month + "/" + day + "/" + year;
 }
 
-//Explorer
-function openExplorer()
+
+
+function openApp(app,icon)
 {
-	document.getElementById("explorer").style.display = "block";
-	document.getElementById("expIcon").style.boxShadow = "0px 10px 20px 0px #FFF inset";	
+	document.getElementById(app).style.display = "block";
+	document.getElementById(icon).style.boxShadow = "0px 10px 20px 0px #FFF inset";	
 }
+
+function go()
+{
+	address = document.getElementById("bar").value;
+	document.getElementById("frame").src = address;
+}
+
+
+
 var move = "";
 function drag(input,e)
 {

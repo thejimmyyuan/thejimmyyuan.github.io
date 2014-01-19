@@ -25,7 +25,7 @@
 				<span class = "icontext">Explorer</span>
 		</div>-->
 		<div id = "explorer" >
-			<div id = "title" onmousedown="drag('explorer', event);"><div class = "title" ><img src = "images/shibe.png"/>Window's Explorer</div>
+			<div id = "title" ><div class = "title" onmousedown="drag('explorer', event);" ><img src = "images/shibe.png"/>Window's Explorer</div>
 				<div class = "options">
 					<button class = "minimax">_</button>
 					<button class = "minimax">O</button>
@@ -38,21 +38,81 @@
 			</div>
 		</div>
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div id = "firefox" >
+			<div id = "title" ><div class = "title" onmousedown="drag('firefox', event);" ><img src = "images/shibe.png"/>FireFox</div>
+				<div class = "options">
+					<button class = "minimax">_</button>
+					<button class = "minimax">O</button>
+					<button class = "close" onclick="closeApp('firefox','foxIcon')">X</button>
+				</div>
+				
+			</div>
+			<div id = "info">
+				<input id = "bar" style = "width:90%;" type = "text" value = "http://www.thejimmyyuan.com/"></input>
+				<button onclick = "go();">Go</button>
+				<div id = "browser"><iframe id = "frame" class = "brow" src ='http://www.thejimmyyuan.com/'></iframe></div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		</div>
 		
 		<button class="start" id="start" onclick ="startMenu()">Start</button>
+		
+		
+		
+		
+		
+		
+		
 		<div class = "taskbar">	
 			<div class = "app">
-				<img id = "expIcon" onclick = "openExplorer();"src = "images/windowsexplorer.png" class = "icon" style = "left:90px;"/>
+				<img id = "expIcon" onclick = "openApp('explorer','expIcon');" src = "images/windowsexplorer.png" class = "icon" style = "left:90px;"/>
+				<img id = "foxIcon" onclick = "openApp('firefox','foxIcon');" src = "images/firedoge.png" class = "icon" style = "left:180px;"/>
 			</div>
+			
 		<span class = "time" id = "time">Loading</span>
 		<br />
 		<span class = "time" id = "date" onload="getTheDay();">Loading</span>
 		</div>
+		
+		
+		
+		
+		
+		
+		
+		
 		<div class="menu" id="menu">
 			<div class="sHeader"><img class = "portrait" src = "images/portrait.png" /></div>
 			<div class = "programs">
-				<span class = "button">FireFox</span>
+				<span class = "button" onclick = "openApp('firefox','foxIcon');">FireFox</span>
 				<span class = "button">Aptana Studios</span>
 				<span class = "button">GitHub</span>
 				<hr />
