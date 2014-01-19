@@ -86,7 +86,7 @@ function mouseUp () {
 //--------------------------------------------------------------------------------------------------------------------------------
 function changebg(input)
 {
-	document.getElementById("desktop").style.background="url(images/" + input + ")";
+	document.getElementById("desktop").style.background="url(images/wallpapers/" + input + ")";
 }
 
 /*
