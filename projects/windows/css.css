@@ -177,6 +177,8 @@ hr
 	border: 1px solid rgba(2, 3, 4, 0.86);
 	border-radius:6px;
 	box-shadow: 0px 0px 10px 1px #000;
+	box-shadow: 0 100px 1px 1px rgba(255,255,255,0.2) inset;
+	
 }
 #explorer #title
 {
@@ -184,20 +186,44 @@ hr
 	height:30px;
 	margin-left:5px;
 	font-size:12px;
+
 	
 }
 #explorer #info
 {
+	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
 	width:580px;
-	height:457px;
+	height:397px;
+	margin-top:60px;
 	background:white;
 	border-style:solid;
 	border-color:white;
 	border-radius:2px;
 }
-
+.bar
+{
+	margin-top:30px;
+}
+.thumbnail
+{
+	cursor:hand;
+	margin-left:5px;
+	margin-right:5px;
+	width:180px;
+	display:inline-block;
+}
+.thumbnail:hover
+{
+	cursor:hand;
+	box-shadow: 0px 0px 10px 5px #0074d9;
+}
+.thumbnail:active
+{
+	cursor:hand;
+	box-shadow: 0px 0px 0px 5px #0074d9;
+}
 .title{
 	padding-top:5px;
 }
@@ -214,6 +240,7 @@ hr
 	border: 1px solid rgba(2, 3, 4, 0.86);
 	border-radius:6px;
 	box-shadow: 0px 0px 10px 1px #000;
+	box-shadow: 0 50px 1px 1px rgba(255,255,255,0.2) inset;
 }
 #firefox #title
 {
@@ -223,7 +250,7 @@ hr
 	font-size:12px;
 	
 }
-#firefox #info
+#firefox #body
 {
 	margin-left:auto;
 	margin-right:auto;
@@ -255,23 +282,20 @@ hr
 	}
 .options button
 {
-	background-color: white; 
+	color:white;
 	border: none; 
-	border-bottom-left-radius: 4px; 
-	-moz-box-sizing: border-box; 
-	box-sizing: border-box; 
 	float: left; 
 	font-size: 10px; 
 	font-weight: bold; 
 	height: 19px; 
-	margin: 0 1px 1px;
-	padding: 0;
+
 }
 .minimax
 {
 	box-shadow: 0px 0px 0px 1px rgba(212, 216, 221, 0.8) inset, 0px 0px 0px 1px rgba(40, 43, 44, 0.8);
 	width: 27px;
-	background: linear-gradient(rgba(221,223,226,0.80), rgba(188,191,184,0.74) 50%, rgba(119,124,127,0.64) 55%, rgba(165,163,176,0.7));
+	background: linear-gradient(rgba(242,246,248,.5) 50%,rgba(0,0,0,.5) 50%);
+	/*background:linear-gradient(rgba(221,223,226,0.80), rgba(188,191,184,0.74) 50%, rgba(119,124,127,0.64) 55%, rgba(165,163,176,0.7));*/
 	
 }
 .minimax:hover

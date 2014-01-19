@@ -34,16 +34,23 @@
 		
 		
 		<div id = "explorer" >
-			<div id = "title" ><div class = "title" onmousedown="drag('explorer', event);" ><img src = "images/shibe.png"/>Window's Explorer</div>
+			<div id = "title" ><div class = "title" onmousedown="drag('explorer', event);" ><img src = "images/shibe.png"/></div>
 				<div class = "options">
 					<button class = "minimax">_</button>
 					<button class = "minimax">O</button>
 					<button class = "close" onclick="closeApp('explorer','expIcon')">X</button>
 				</div>
-				
+				<button onclick = "go();"><</button>
+				<button onclick = "go();">></button>
+				<input class = "bar" style = "width:300px;" type = "text" value = "Desktop Wallpapers"></input>
+				<button onclick = "go();">Go</button>
+				<input class = "bar" style = "width:150px;" type = "text" value = "Search"></input>
 			</div>
 			<div id = "info">
 				
+				<div class = "thumbnail"><img src = "images/wall2.jpg" onclick = "changebg('wall2.jpg');" width ="160px" style = ""/><br />Cup of Tea</div>
+				<div class = "thumbnail"><img src = "images/wall3.jpg" onclick = "changebg('wall3.jpg');" width ="180px" style = ""/><br />Forest Trail</div>
+				<div class = "thumbnail"><img src = "images/wall4.png" onclick = "changebg('wall4.png');" width ="180px" style = ""/><br />Windoge</div>
 			</div>
 		</div>
 		
@@ -67,7 +74,7 @@
 				</div>
 				
 			</div>
-			<div id = "info">
+			<div id = "body">
 				<input id = "bar" style = "width:90%;" type = "text" value = "http://www.thejimmyyuan.com/"></input>
 				<button onclick = "go();">Go</button>
 				<div id = "browser"><iframe id = "frame" class = "brow" src ='http://www.thejimmyyuan.com/'></iframe></div>

@@ -82,6 +82,13 @@ function mouseUp () {
     document.removeEventListener ("mousemove" , mouseMove , false);
     document.removeEventListener ("mouseup" , mouseUp , false);
 }
+//CHANGE BG
+//--------------------------------------------------------------------------------------------------------------------------------
+function changebg(input)
+{
+	document.getElementById("desktop").style.background="url(images/" + input + ")";
+}
+
 /*
 var move = "";
 function drag(input,e)
