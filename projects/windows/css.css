@@ -10,9 +10,12 @@ hr
 }
 #desktop
 {
-	background-image:url('images/wallpapers/wallpaper.png');
-	background-size:1920px 1080px;
-	background-repeat:no-repeat;
+
+	background: url('images/wallpapers/wallpaper.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
     position:absolute;
     top:0px;
     left:0px;
@@ -177,7 +180,7 @@ hr
 	border: 1px solid rgba(2, 3, 4, 0.86);
 	border-radius:6px;
 	box-shadow: 0px 0px 10px 1px #000;
-	box-shadow: 0 100px 1px 1px rgba(255,255,255,0.2) inset;
+	box-shadow: 0 100px 100px 1px rgba(255,255,255,0.2) inset;
 	
 }
 #explorer #title
@@ -236,13 +239,12 @@ hr
 	left:400px;
 	width:800px;
 	height:600px;
-	box-shadow: inset 0 350px rgba(255,255,255,0.2),inset 0 -15px 30px rgba(255,255,255,0.4),0 5px 10px rgba(255,255,255,0.5);
 	border: 1px solid rgba(2, 3, 4, 0.86);
 	border-radius:6px;
-	box-shadow: 0px 0px 10px 1px #000;
+	box-shadow: 0px 10px 10px 10px #000;
 	box-shadow: 0 50px 1px 1px rgba(255,255,255,0.2) inset;
 }
-#firefox #title
+#firefox #fetitle
 {
 	width:100%;
 	height:30px;
@@ -250,7 +252,7 @@ hr
 	font-size:12px;
 	
 }
-#firefox #body
+#firefox #febody
 {
 	margin-left:auto;
 	margin-right:auto;
@@ -268,7 +270,44 @@ hr
 	border-style:none;
 }
 
-
+#resume
+{
+	display:none;
+	position:absolute;
+	top:0px;
+	left:200px;
+	width:650px;
+	height:845px;
+	border: 1px solid rgba(2, 3, 4, 0.86);
+	border-radius:6px;
+	box-shadow: 0px 10px 10px 10px #000;
+	box-shadow: 0 50px 1px 1px rgba(255,255,255,0.2) inset;
+}
+#resume #retitle
+{
+	width:100%;
+	height:30px;
+	margin-left:5px;
+	font-size:12px;
+	
+}
+#resume #rebody
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:630px;
+	height:800px;
+	background:white;
+	border-style:solid;
+	border-color:white;
+	border-radius:2px;
+}
+#resume .brow
+{
+	height:800px;
+	width:600px;
+	overflow-x:hidden;
+}
 
 
 
@@ -315,3 +354,25 @@ hr
 	
 }
 
+.backfo
+{
+	background: linear-gradient(rgba(127,219,255,.8) 50%,rgba(0,31,63,1.5) 50%);
+	color:white;
+	font-size:16px;
+	width:20px;
+	border-color:blue;
+	border-radius:50%;
+	border-style:none;
+	box-shadow: 0px 10px 10px 5px rgba(255,255,255,.4) inset;
+}
+.backfo:hover
+{
+	box-shadow: 0px 0px 20px 5px rgba(255,255,255,.4) inset;
+}
+.go
+{
+	background:#001f3f;
+	opacity:.9;
+	border-style:none;
+	color:white;
+}

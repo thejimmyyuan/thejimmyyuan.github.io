@@ -40,10 +40,10 @@
 					<button class = "minimax">O</button>
 					<button class = "close" onclick="closeApp('explorer','expIcon')">X</button>
 				</div>
-				<button onclick = "go();"><</button>
-				<button onclick = "go();">></button>
+				<button class = "backfo"><</button>
+				<button class = "backfo">></button>
 				<input class = "bar" style = "width:300px;" type = "text" value = "Desktop Wallpapers"></input>
-				<button onclick = "go();">Go</button>
+				<button class = "go">Go</button>
 				<input class = "bar" style = "width:150px;" type = "text" value = "Search"></input>
 			</div>
 			<div id = "info">
@@ -78,7 +78,7 @@
 		
 		
 		<div id = "firefox" >
-			<div id = "title" ><div class = "title" onmousedown="drag('firefox', event);" ><img src = "images/shibe.png"/>FireDoge</div>
+			<div id = "fetitle"><div class = "title" onmousedown="drag('firefox', event);" ><img src = "images/shibe.png"/>FireDoge</div>
 				<div class = "options">
 					<button class = "minimax">_</button>
 					<button class = "minimax">O</button>
@@ -86,14 +86,29 @@
 				</div>
 				
 			</div>
-			<div id = "body">
-				<input id = "bar" style = "width:90%;" type = "text" value = "http://www.thejimmyyuan.com/"></input>
-				<button onclick = "go();">Go</button>
+			<div id = "febody">
+				<button class = "backfo" onclick="history.go(-1);"><</button>
+				<button class = "backfo">></button>
+				<input id = "bar" style = "width:650px;" type = "text" value = "http://www.thejimmyyuan.com/"></input>
+				<button class = "go" onclick = "go();">Go</button>
 				<div id = "browser"><iframe id = "frame" class = "brow" src ='http://www.thejimmyyuan.com/'></iframe></div>
 			</div>
 		</div>
 		
 		
+		<div id = "resume" >
+			<div id = "retitle"><div class = "title" onmousedown="drag('resume', event);" ><img src = "images/shibe.png"/>Resume</div>
+				<div class = "options">
+					<button class = "minimax">_</button>
+					<button class = "minimax">O</button>
+					<button class = "close" onclick="closeApp('resume','reIcon')">X</button>
+				</div>
+				
+			</div>
+			<div id = "rebody">
+				<iframe class = "brow" src ='resume.html'></iframe>
+			</div>
+		</div>
 		
 		
 		
@@ -123,6 +138,7 @@
 			<div class = "app">
 				<img id = "expIcon" onclick = "openApp('explorer','expIcon');" src = "images/windowsexplorer.png" class = "icon" style = "left:90px;"/>
 				<img id = "foxIcon" onclick = "openApp('firefox','foxIcon');" src = "images/firedoge.png" class = "icon" style = "left:180px;"/>
+				<img id = "reIcon" src = "images/resume.png" class = "icon" style = "display:none;height:40px; left:270px;"/>
 			</div>
 
 
@@ -156,21 +172,21 @@
 			<div class="sHeader"><img class = "portrait" src = "images/portrait.png" /></div>
 			<div class = "programs">
 				<span class = "button" onclick = "openApp('firefox','foxIcon');">FireFox</span>
-				<span class = "button">Aptana Studios</span>
-				<span class = "button">GitHub</span>
+				<span class = "button" onclick = "openLink('http://http://www.aptana.com/');">Aptana Studios</span>
+				<span class = "button" onclick = "openLink('https://github.com/thejimmyyuan');">GitHub</span>
 				<hr />
-				<span class = "button">Steam</span>
-				<span class = "button">League of Legends</span>
-				<span class = "button">StarCraft II</span>
-				<span class = "button">BattleField 3</span>
+				<span class = "button" onclick = "openLink('http://store.steampowered.com/');">Steam</span>
+				<span class = "button" onclick = "openLink('http://na.leagueoflegends.com/');">League of Legends</span>
+				<span class = "button" onclick = "openLink('http://us.battle.net/sc2/en/')">StarCraft II</span>
+				<span class = "button" onclick = "openLink('http://battlelog.battlefield.com/bf3/gate/');">BattleField 3</span>
 			</div>
 		<div class = "right">
-			<span class = "drkButton" style = "top:50px;" onclick="">Jimmy Yuan</span>
+			<span class = "drkButton" style = "top:50px;" onclick="openApp('resume','reIcon')">Jimmy Yuan</span>
 			<span class = "drkButton" style = "top:100px;" onclick="">Projects</span>
 			<span class = "drkButton" style = "top:150px;" onclick="">Documents</span>
 			<span class = "drkButton" style = "top:200px;" onclick="">Music</span>
 			
-			<span class = "drkButton" style = "bottom:0px;" onclick="window.close();">Shut Down</span>
+			<span class = "drkButton" style = "bottom:0px;" onclick="">Shut Down</span>
 		</div>
 		</div>	
 	</body>

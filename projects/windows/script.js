@@ -42,7 +42,17 @@ function getTheDay()
 function openApp(app,icon)
 {
 	document.getElementById(app).style.display = "block";
-	document.getElementById(icon).style.boxShadow = "0px 10px 20px 0px #FFF inset";	
+	if(icon === "reIcon")
+	{
+		document.getElementById(icon).style.display = "block";	
+		document.getElementById(icon).style.boxShadow = "0px 10px 20px 0px #FFF inset";	
+		closeSystem();
+	}
+	else{
+		document.getElementById(icon).style.boxShadow = "0px 10px 20px 0px #FFF inset";	
+		closeSystem();
+	}
+	
 }
 
 function closeApp(input,inputdos)
@@ -51,6 +61,11 @@ function closeApp(input,inputdos)
 	icon = inputdos;
 	document.getElementById(app).style.display ="none";
 	document.getElementById(icon).style.boxShadow = "";
+	if(icon === "reIcon")
+	{
+		document.getElementById(icon).style.display ="none";
+	}
+	
 }
 
 function go()
@@ -62,20 +77,26 @@ function go()
 //FUNCTIONALITY
 //--------------------------------------------------------------------------------------------------------------------------------
 var move = "";
+var offX;
+var offY;
+//THANK YOU STACK OVERFLOW
 function drag(input,e)
 {
+	offX = e.clientX - parseInt(move.offsetLeft);
+    offY = e.clientY - parseInt(move.offsetTop);
     move = document.getElementById(input);
     document.addEventListener ("mousemove" , mouseMove , false);
 }
 
 function mouseMove(e) {
+
     x = e.screenX;
     y = e.screenY;
    
    	//alert("x:" + x + " & " + "y:" + y);
     
-    move.style.left = (x - x/2)  + "px";
-    move.style.top = (y - 100) + "px";
+    move.style.left = x-offX  + "px";
+    move.style.top = y-offY - 100 + "px";
     document.addEventListener ("mouseup" , mouseUp , false);
 }
 function mouseUp () {
@@ -86,8 +107,48 @@ function mouseUp () {
 //--------------------------------------------------------------------------------------------------------------------------------
 function changebg(input)
 {
-	document.getElementById("desktop").style.background="url(images/wallpapers/" + input + ")";
+	document.getElementById("desktop").style.background="url(images/wallpapers/" + input + ") no-repeat center center fixed";
 }
+//Open Link
+//--------------------------------------------------------------------------------------------------------------------------------
+function openLink(input)
+{
+	var win=window.open(input, '_blank');
+    win.focus();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 var move = "";
