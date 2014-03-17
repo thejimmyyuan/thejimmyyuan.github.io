@@ -3,12 +3,18 @@ body {
 	font-family: 'Voces', cursive;
 	background:#102D40;
 	color:black;
+	height:100%;
 }
 .container
 {
 	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
+	height:100%;
+}
+svg,.container,body, html
+{
+	height:100%;
 }
 svg
 {
@@ -16,7 +22,7 @@ svg
 	outline-width:5px;
 	outline-color:#DDDDDD;
 	width:300px;
-	height:450px;
+	height:100%;
 	background:white;
 	-webkit-transition: background 0.2s 0.3s;
     transition: background 0.4s 0.1s;
