@@ -24,13 +24,16 @@ svg
 	width:300px;
 	height:100%;
 	background:white;
-	-webkit-transition: background 0.2s 0.3s;
-    transition: background 0.4s 0.1s;
     margin-left:10px;
     margin-right:10px;
     border-width:5px;
     border-style: solid;
 	border-color:#2c3e50;
+	-webkit-transition: background 0.2s 0.3s;
+    transition: background 0.4s 0.1s;
+    -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
 }
 svg:hover
 {
@@ -40,14 +43,23 @@ svg:hover
 .about:hover
 {
 	background:black;
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
 }
 .pro:hover
 {
 	background:#2c3e50;
+	 -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
 }
 .casual:hover
 {
 	background:#102D40;
+	 -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
 }
 h1
 {
@@ -62,4 +74,17 @@ text
 	font-family: Arial;
 	font-size:40px;
 	fill:#215A7F;
+}
+.aboutMe
+{
+	background:#DDDDDD;
+	height:100%;
+	width:700px;
+	display:none;
+	opacity:0;
+	margin-left:auto;
+	margin-right:auto;
+	webkit-animation-delay: 0.7s;
+	-moz-animation-delay: 0.7s;
+	animation-delay: 0.7s
 }
