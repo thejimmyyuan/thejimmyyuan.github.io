@@ -11,6 +11,7 @@ body {
 	margin-left:auto;
 	margin-right:auto;
 	height:100%;
+	width:90%;
 }
 div,.container,body, html
 {
@@ -21,7 +22,7 @@ div
 	outline:solid;
 	outline-width:5px;
 	outline-color:#DDDDDD;
-	width:200px;
+	width:300px;
 	height:100%;
 	background:white;
     margin-left:10px;
