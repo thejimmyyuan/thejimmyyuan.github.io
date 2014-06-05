@@ -12,11 +12,11 @@ body {
 	margin-right:auto;
 	height:100%;
 }
-svg,.container,body, html
+div,.container,body, html
 {
 	height:90%;
 }
-svg
+div
 {
 	outline:solid;
 	outline-width:5px;
@@ -35,7 +35,7 @@ svg
    -khtml-user-select: none;
    -webkit-user-select: none;
 }
-svg:hover
+div:hover
 {
 	border-color:white;
 	outline-color:#111111;
