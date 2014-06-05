@@ -25,16 +25,15 @@ div
 	width:300px;
 	height:100%;
 	background:white;
-    margin-left:10px;
-    margin-right:10px;
-    border-width:5px;
-    border-style: solid;
+    	border-width:5px;
+    	border-style: solid;
 	border-color:#2c3e50;
 	-webkit-transition:background 0.4s 0.1s;
-    transition: background 0.4s 0.1s;
-    -moz-user-select: -moz-none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
+    	transition: background 0.4s 0.1s;
+	 -moz-user-select: -moz-none;
+   	-khtml-user-select: none;
+   	-webkit-user-select: none;
+   	display:inline-block;
 }
 div:hover
 {
