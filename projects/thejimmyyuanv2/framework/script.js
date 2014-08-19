@@ -6,6 +6,10 @@ function slideRight(el) {
 function slideLeft(el) {
 	document.getElementById(el).style.left = "-15%";
 }
+function slideUp(el)
+{
+	document.getElementById(el).style.bottom = "15%";
+}
 
 function openPanel(name) {
 
@@ -18,6 +22,7 @@ function closePanel(name) {
 	if(name == "landing")
 	{
 		resetDivs(true);
+		slideRight('sideMenu');
 	}
 	else {
 		resetDivs();
