@@ -99,6 +99,7 @@ hr {
 }
 .text{
 	width:70%;
+	text-align:left;
 	margin-top:1.5em;
 	margin-bottom:1.5em;
 	line-height: 1.5em;
