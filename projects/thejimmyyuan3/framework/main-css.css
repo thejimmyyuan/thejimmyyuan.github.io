@@ -34,7 +34,8 @@ html {
 {
 	display:inline-block;
 	border-bottom-style:solid;
-	border-color:gray;
+	border-width:thin;
+	border-color:#E8E2E5;
 	padding:1em;
 	cursor:pointer;
 	margin-right:-.3em;
@@ -42,7 +43,7 @@ html {
 }
 .menuButton:hover
 {
-	border-color:cornflowerblue;
+	border-color:black;
 }
 .menuButton[aria-pressed=true]
 {
