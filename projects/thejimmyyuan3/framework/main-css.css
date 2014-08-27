@@ -88,6 +88,11 @@ h2
 {
 	font-family: 'Noto Sans', sans-serif;
 }
+h3
+{
+	margin-top:1.5em;
+	margin-bottom:1.5em;
+}
 hr {
 	border: 0;
 	width:100%;
