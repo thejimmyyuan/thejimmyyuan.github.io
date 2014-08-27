@@ -11,7 +11,7 @@ html, body, .wrapper {
 }
 html {
 	/*background: url(images/bg2.jpg) no-repeat center center fixed; */
-	background: #E5E5E5;
+	background: #FFFFFF;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -24,155 +24,89 @@ html {
 	padding: 0;
 	text-align: center;
 }
-
-/*Inside the Container*/
-
-/*SideMenu*/
-.sideMenu {
-	position: absolute;
-	left: -15%;
-	width: 15%;
-	height: 80%;
-	margin-top: 1em;
-	background: white;
-	transition: .4s ease-in;
-	border-radius: 3px;
-	box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+/*Line Menu*/
+.nav
+{
+	width:100%;
+	text-align:center;
 }
-
-.button {
-	color: cornflowerblue;
-	border-bottom-style: solid;
-	border-width: 1px;
-	border-color: rgba(0,0,0,.2);
-	padding: 2em;
-	cursor: pointer;
-	transition: .4s ease-in;
+.menuButton
+{
+	display:inline-block;
+	border-bottom-style:solid;
+	border-width:thin;
+	border-color:#E8E2E5;
+	padding:1em;
+	cursor:pointer;
+	margin-right:-.3em;
+	transition:.3s ease-in;
 }
-.button:hover {
-	background: cornflowerblue;
-	color: white;
+.menuButton:hover
+{
+	border-color:black;
 }
-/*Menu*/
-.nav-header {
-	background: #FFFFFF;
-	padding: 1.5em;
-	box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+.menuButton[aria-pressed=true]
+{
+	border-color:black;
 }
-.menu {
-	padding: 1em;
-	font-size: 1.5em;
-	color: white;
-	border-left-style: solid;
-	border-right-style: solid;
-	border-width: 1px;
-	border-color: rgba(0,0,0,.2);
-	border-radius: 3px;
-	font-family: 'Roboto', sans-serif;
-	transition: .1s ease-in;
-	cursor: pointer;
-	background:#BF3100;
-}
-.menu:hover {
-	background: #fff;
-	color: cornflowerblue;
-}
-
-/*Content*/
-.first-landing {
-}
-h1 {
-	font-size: 3em;
+/*Content Styling*/
+.content{
+	margin:1em;
+	display:none;
 }
 .portrait {
-	width: 50%;
+	width: 40%;
 }
-/*otherstuff*/
-.contact
+#about
 {
-	position:absolute;
 	display:block;
-	color:white;
-	cursor:pointer;
-	right:0;
-	bottom:0;
-	background:#BF3100;
-	padding:1em;
-	transition:.4s ease-in;
 }
-.contact:hover
+/*General Stuff*/
+.panel {
+
+	margin-top: 2em;
+	width: 85%;
+	
+	text-align: center;
+	padding: 1em;
+	position: relative;
+	border-radius: 3px;
+	background: white;
+	margin-bottom: 2em;
+	box-shadow: 0px 0px 1px rgba(0,0,0,.5);
+}
+.center
 {
-	background:white;
-	color:cornflowerblue;
+	margin-left:auto;
+	margin-right:auto;
 }
-#contact
+h1 {
+	font-size:3em;
+	font-family: 'Noto Sans', sans-serif;
+}
+h2
 {
-	position:absolute;
-	bottom:-15%;
-	right:0;
+	font-family: 'Noto Sans', sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*General Classes*/
-.center {
-	margin-left: auto;
-	margin-right: auto;
-}
-.text {
-	margin: 1.5em;
-	line-height: 1.5em;
+h3
+{
+	margin-top:2em;
+	margin-bottom:1em;
 }
 hr {
 	border: 0;
-	width:80%;
+	width:100%;
 	height: 1px;
 	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
+.text{
+	width:70%;
+	text-align:justify;
+	margin-top:1.5em;
+	margin-bottom:1.5em;
+	line-height: 1.5em;
 
-.panel-header {
-	margin: 1em;
-}
-.title {
-	display: inline-block;
-	text-align: center;
-	font-family: 'Noto Sans', sans-serif;
-	font-size: 4em;
-}
-.close {
-	display: inline-block;
-	right: 0;
-	position: absolute;
-	padding: 1em;
-	transition: .4s ease-out;
-	cursor: pointer;
-}
-.close:hover {
-	background: #7F1200;
-	color: white;
-}
-.panel {
-	display: none;
-	margin-top: 2em;
-	width: 50%;
-	text-align: center;
-	padding: 1em;
-	position: relative;
-	border-radius: 3px;
-	background: white;
-	box-shadow: 0px 0px 10px rgba(0,0,0,.1);
 }
