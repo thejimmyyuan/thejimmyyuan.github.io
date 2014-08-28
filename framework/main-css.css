@@ -105,3 +105,9 @@ hr {
 	margin-bottom: 1.5em;
 	line-height: 1.5em;
 }
+
+.list
+{
+
+	list-style-type:none;
+}
