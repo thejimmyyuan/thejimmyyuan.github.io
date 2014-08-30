@@ -16,6 +16,7 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	font-size:1.1em;
 }
 .container {
 	width: 100%;
@@ -64,7 +65,7 @@ html {
 .panel {
 
 	margin-top: 2em;
-	width: 85%;
+	width: 82%;
 	text-align: center;
 	padding: 1em;
 	position: relative;
@@ -106,8 +107,12 @@ hr {
 	line-height: 1.5em;
 }
 
-.list
+.footer
 {
-
-
+	
+	text-align:center;
+	margin-bottom:1em;
+}
+.footer a{
+	color:black;
 }
