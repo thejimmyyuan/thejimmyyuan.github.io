@@ -1,0 +1,113 @@
+html, body, .wrapper {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Helvetica;
+}
+html {
+	/*background: url(images/bg2.jpg) no-repeat center center fixed; */
+	background: #E8E2E5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-size:1.1em;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+/* N A V I G A T O R */
+.navigator
+{
+	background:#FFF;
+	text-align:right;
+}
+.logoText
+{
+	font-size:1.5em;
+	color:cornflowerblue;
+
+}
+.menuItems
+{
+	text-align:right;
+	display:inline-block;
+}
+.menuButton
+{
+	color: cornflowerblue;
+	padding:1em;
+	vertical-align:middle;
+	display:inline-block;
+	transition:.4s ease-in;
+	cursor:pointer;
+}
+.menuButton:hover{
+	background:cornflowerblue;
+	color:white;
+}
+/* C O N T E N T */
+.login
+{
+	width:20em;
+	height:20em;
+	background:white;
+	margin-top:1em;
+	text-align:center;
+	padding:1em;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+
+}
+.loginContainer
+{
+	width:90%;
+}
+.inputWrapper
+{
+	margin-top:2em;	
+}
+.input
+{
+	
+	font-size:.7em;
+	display:block;
+	padding:1em;
+	width:90%;
+	margin-top:.5em;
+	height:1.5em;
+	
+}
+.loginbutton
+{
+	background:white;
+	font-size:1em;
+	display:inline-block;
+	width:45%;
+	border:none;
+	color:white;
+	background:cornflowerblue;
+	padding:.5em;
+	cursor:pointer;
+	transition:.4s ease-in;
+}
+.loginbutton:hover{
+	background:#fff;
+	color:cornflowerblue;
+}
+/* G E N E R A L */
+.center
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* T A G S */
+h1{
+	margin-top:1em;
+	text-align:center;
+}
