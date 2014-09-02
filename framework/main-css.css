@@ -100,7 +100,7 @@ hr {
 	background-image: -o-linear-gradient(left, rgba(232,226,229,0), rgba(232,226,229,0.5), rgba(232,226,229,0));
 }
 .text {
-	width: 85%;
+	width: 50%;
 	text-align: justify;
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
