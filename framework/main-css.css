@@ -128,3 +128,16 @@ hr {
 .footer a {
 	color: white;
 }
+/* M E D I A  Q U E R I E S */
+@media (max-width: 900px)
+{
+.menuButton{
+	padding:.5em;
+}
+}
+@media (min-width: 1500px)
+{
+.panel{
+	max-width:1080px;
+}
+}
