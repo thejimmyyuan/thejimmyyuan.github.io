@@ -134,6 +134,9 @@ hr {
 .menuButton{
 	padding:.5em;
 }
+.panel{
+	width:90%
+}
 }
 @media (min-width: 1500px)
 {
