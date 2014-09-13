@@ -138,7 +138,11 @@ hr {
 .panel{
 	width:90%
 }
-.portrait
+
+}
+@media (max-width:500px)
+{
+	 .portrait
 {
 	width:90%;
 }
