@@ -132,7 +132,8 @@ hr {
 @media (max-width: 900px)
 {
 .menuButton{
-	padding:.2em;
+	font-size:.5em;
+	padding:.5em;
 }
 .panel{
 	width:90%
