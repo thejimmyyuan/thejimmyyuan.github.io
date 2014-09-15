@@ -15,6 +15,7 @@ html {
 	-o-background-size: cover;
 	background-size: cover;
 	font-size: 1.1em;
+	overflow-y:none;
 }
 
 /* C O N T E N T  P A N E L */
@@ -59,7 +60,7 @@ html {
 	font-weight:100;
 	text-align:center;
 	font-size:8em;
-	padding:1.3em;
+	padding:17%;
 }
 .day
 {
