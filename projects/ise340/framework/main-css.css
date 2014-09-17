@@ -134,6 +134,10 @@ h1 {
 	margin: 1.5em;
 	line-height: 1.5em;
 }
+.astext
+{
+	text-align:justify;
+}
 hr {
 	border: 0;
 	width:90%;
