@@ -4,8 +4,8 @@ html, body, .wrapper {
 	width: 100%;
 	background:#ecf0f1;
 	height: 100%;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	
 }
 /* P U R E */
 .pure-g > div {
@@ -46,6 +46,8 @@ html, body, .wrapper {
 #time
 {
 	font-size:5em;
+	font-family: 'Roboto', sans-serif;
+	font-weight:100;
 }
 /* C O L O R S */
 .blue
