@@ -103,6 +103,7 @@ html {
 
 h1 {
 	font-size: 3em;
+	letter-spacing: .15em;
 	font-weight: 300;
 	font-family: 'Lato', sans-serif;
 }
