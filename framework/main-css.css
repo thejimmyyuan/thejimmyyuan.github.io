@@ -70,6 +70,17 @@ html {
 #about {
 	display: block;
 }
+.handlers
+{
+	display:inline-block;
+	font-size:.9em;
+	padding-left:.5em;
+	
+}
+.smedia
+{
+	padding-top:.5em;
+}
 /*----------------------------------------General Stuff----------------------------------------*/
 .panel {
 
