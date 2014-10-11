@@ -41,7 +41,7 @@ html {
 	margin: 0;
 	position: absolute;
 	bottom: 0;
-	cursor:default;
+	cursor: default;
 	padding: 0 .5em;
 	transition: .4s ease-in;
 }
@@ -49,29 +49,27 @@ html {
 	background: #2c3e50;
 }
 .taskbartime {
-	text-align:center;
+	text-align: center;
 	position: absolute;
 	right: 1em;
 	bottom: 0;
-	padding-left:.8em;
-	padding-right:.8em;
-	padding-bottom:.1em;
-	height:3em;
+	padding-left: .8em;
+	padding-right: .8em;
+	padding-bottom: .1em;
+	height: 3em;
 	font-family: calibri;
 	font-size: .7em;
 	color: white;
-	transition:.5s ease-in;
-	cursor:default;
+	transition: .5s ease-in;
+	cursor: default;
 }
-.time
-{
-	padding:.1em;
-	display:inline-block;
-	cursor:default;
+.time {
+	padding: .1em;
+	display: inline-block;
+	cursor: default;
 }
-.taskbartime:hover{
-		box-shadow: 0px -.1em 0em .1em rgba(255,255,255,.2) inset;
-	
+.taskbartime:hover {
+	box-shadow: 0px .1em 0em .1em rgba(255,255,255,.2);
 }
 .icons {
 	position: absolute;
@@ -90,5 +88,52 @@ html {
 }
 .tIcons:hover {
 
-	box-shadow: 0px 0px 1em 100em rgba(255,255,255,.2) inset ,0px 0px 0px 1px rgba(0,0,0,.2),0px 0px 1em 2px rgba(255,255,255,.2) inset;
+	box-shadow: 0px 0px 1em 100em rgba(255,255,255,.2) inset, 0px 0px 0px 1px rgba(0,0,0,.2), 0px 0px 1em 2px rgba(255,255,255,.2) inset;
+}
+.taskIcons {
+	position: absolute;
+	bottom: 0;
+	right: 5.5em;
+	padding-top: 1em;
+	margin-top: 1em;
+}
+.taIcons {
+	transition: .5s ease-out;
+	height: .85em;
+	position: relative;
+	padding: 0em .2em;
+	bottom: .4em;
+	padding-bottom: .2em;
+	cursor: default;
+}
+.taIcons:hover {
+
+	box-shadow: 0px .2em .2em -.1em rgba(255,255,255,.4);
+}
+.dIcons
+{
+	margin-top:1em;
+	height:2.5em;
+}
+.iconText
+{
+	text-align:center;
+	display:block;
+	margin:0;
+	font-size:.6em;
+	color:white;
+	text-shadow: .1em .1em .3em #000;
+}
+.iconWrapper{
+	text-align:center;
+	position:relative;
+	
+	
+	width:5em;
+	height:5em;
+}
+.iconWrapper:hover
+{
+	cursor:default;
+	box-shadow: 0px 0px 1em 100em rgba(255,255,255,.2) inset, 0px 0px 0px 1px rgba(0,0,0,.2), 0px 0px 1em 2px rgba(255,255,255,.2) inset;	
 }

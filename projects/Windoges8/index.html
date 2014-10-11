@@ -17,13 +17,22 @@
 		<script>
 			setInterval(function() {
 				theTime = new Date().toLocaleTimeString();
-				aTime = theTime.substring(0,5);
+				aTime = theTime.substring(0, 5);
 				lTime = theTime.substring(8);
 				theTime = aTime + lTime;
 				document.getElementById("time").innerHTML = theTime;
 			}, 1000);
 		</script>
 		<body onload="getTheDay();">
+			<div class = "desktopIcons">
+				<div class = "iconWrapper">
+					<img src = "framework/images/trash.png" class = "dIcons"/>
+					<span class = "iconText">Recycle Bin</span>
+				</div>
+			</div>
+			<div class = "volumeRocker">
+				
+			</div>
 			<div class = "startMenu">
 				<a href = "#"><img src = "framework/images/startmenu.png" class = "startButton" /></a>
 			</div>
@@ -31,11 +40,17 @@
 				<img src = "framework/images/firefox.png" class = "tIcons"/>
 				<img src = "framework/images/explorer.png" class = "tIcons"/>
 			</div>
+			<div class = "taskIcons">
+
+				<img src = "framework/images/battery.png" class = "taIcons"/>
+				<img src = "framework/images/wifi.png" class = "taIcons"/>
+				<img src = "framework/images/volume.png" class = "taIcons"/>
+			</div>
 			<div class = "taskbartime">
 				<span class = "time" id = "time">Loading</span>
 				<br />
 				<span class = "time" id = "date" onload="getTheDay();">Loading</span>
 			</div>
-		
+
 		</body>
 </html>
