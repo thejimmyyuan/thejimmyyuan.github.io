@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css"href="framework/main-css.css">
 		<script src="framework/script.js"></script>
 		<link rel="icon" type="image/png" href="framework/images/shibe.png">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
 		<meta name="description" content="" />
 		<meta name="author" content="Jimmy Yuan" />
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
@@ -24,33 +25,47 @@
 			}, 1000);
 		</script>
 		<body onload="getTheDay();">
-			<div class = "desktopIcons">
-				<div class = "iconWrapper">
-					<img src = "framework/images/trash.png" class = "dIcons"/>
-					<span class = "iconText">Recycle Bin</span>
+			<div class = "wifiMenu" id = "wifiMenu">
+					<h2 class = "wifiHeader">Networks</h2>
+					<div class = "wifiWrapper">
+						<h4 class = "wifiHeader">Airplane Mode</h4>
+						<span class = "wifiText">On</span>
+						<div class="onoffswitch">
+							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+							<label class="onoffswitch-label" for="myonoffswitch"> <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span> </label>
+						</div>
+						<h4 class = "wifiHeader">Connections</h4>
+						<span class = "wifiText">NETWORK</span>
+						<img src = "framework/images/wifi.png" class = "wIcons"/>
+					</div>
+				</div>
+			<div class = "desktop" onclick="closeSystem('wifiMenu');">
+				<div class = "desktopIcons">
+					<div class = "iconWrapper">
+						<img src = "framework/images/trash.png" class = "dIcons"/>
+						<span class = "iconText">Recycle Bin</span>
+					</div>
+				</div>
+				
+				<div class = "startMenu">
+					<a href = "#"><img src = "framework/images/startmenu.png" class = "startButton" /></a>
+				</div>
+				<div class = "icons">
+					<img src = "framework/images/firefox.png" class = "tIcons"/>
+					<img src = "framework/images/explorer.png" class = "tIcons"/>
+				</div>
+				
+				<div class = "taskbartime">
+					<span class = "time" id = "time">Loading</span>
+					<br />
+					<span class = "time" id = "date" onload="getTheDay();">Loading</span>
 				</div>
 			</div>
-			<div class = "volumeRocker">
-				
-			</div>
-			<div class = "startMenu">
-				<a href = "#"><img src = "framework/images/startmenu.png" class = "startButton" /></a>
-			</div>
-			<div class = "icons">
-				<img src = "framework/images/firefox.png" class = "tIcons"/>
-				<img src = "framework/images/explorer.png" class = "tIcons"/>
-			</div>
-			<div class = "taskIcons">
+<div class = "taskIcons">
 
-				<img src = "framework/images/battery.png" class = "taIcons"/>
-				<img src = "framework/images/wifi.png" class = "taIcons"/>
-				<img src = "framework/images/volume.png" class = "taIcons"/>
-			</div>
-			<div class = "taskbartime">
-				<span class = "time" id = "time">Loading</span>
-				<br />
-				<span class = "time" id = "date" onload="getTheDay();">Loading</span>
-			</div>
-
+					<img src = "framework/images/battery.png" class = "taIcons"/>
+					<img src = "framework/images/wifi.png" class = "taIcons" onclick = "slideLeft('wifiMenu');"/>
+					<img src = "framework/images/volume.png" class = "taIcons" id = "volume" onclick = "swapIcon('volume','volume.png','mute.png');"/>
+				</div>
 		</body>
 </html>
