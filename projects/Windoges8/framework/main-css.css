@@ -170,6 +170,7 @@ html {
 .wifiTextC
 {
 	transition:.4s ease-in;
+	cursor:pointer;
 	padding:.5em;
 }
 .wifiTextC:hover
