@@ -35,6 +35,24 @@ function closeSystem(el) {
 }
 
 //--------------------------------------------------------------------------------------------------------------------------------
+//Wifi
+var offWifi = false;
+function turnOffWifi()
+{
+	if (offWifi) {
+		document.getElementById("wifiOff").style.display = "block";
+		document.getElementById("textStatus").innerHTML = "On";
+		document.getElementById("wifi").src = "framework/images/wifi.png";
+		offWifi = false;
+	} else {
+		document.getElementById("wifiOff").style.display = "none";
+		document.getElementById("textStatus").innerHTML = "Off";
+		document.getElementById("wifi").src = "framework/images/nowifi.png";
+		offWifi = true;
+	}
+}
+
+//--------------------------------------------------------------------------------------------------------------------------------
 //DAY
 function getTheDay() {
 	date = new Date();

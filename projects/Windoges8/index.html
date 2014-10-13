@@ -8,7 +8,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 		<title>Windows 8</title>
-		<link rel="stylesheet" type="text/css"href="framework/main-css.css">
+		<link rel="stylesheet" type="text/css" href="framework/main-css.css">
 		<script src="framework/script.js"></script>
 		<link rel="icon" type="image/png" href="framework/images/shibe.png">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
@@ -26,46 +26,64 @@
 		</script>
 		<body onload="getTheDay();">
 			<div class = "wifiMenu" id = "wifiMenu">
-					<h2 class = "wifiHeader">Networks</h2>
-					<div class = "wifiWrapper">
-						<h4 class = "wifiHeader">Airplane Mode</h4>
-						<span class = "wifiText">On</span>
-						<div class="onoffswitch">
-							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-							<label class="onoffswitch-label" for="myonoffswitch"> <span class="onoffswitch-inner"></span> <span class="onoffswitch-switch"></span> </label>
-						</div>
+				<h2 class = "wifiHeader">Networks</h2>
+				<div class = "wifiWrapper">
+					<span class = "wifiText" id = "textStatus">On</span>
+
+					<div class="onoffswitch">
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+						<label class="onoffswitch-label" for="myonoffswitch" onclick = "turnOffWifi();"> <span class="onoffswitch-inner" ></span> <span class="onoffswitch-switch" ></span> </label>
+					</div>
+
+					<div id = "wifiOff">
 						<h4 class = "wifiHeader">Connections</h4>
 						<span class = "wifiText">NETWORK</span>
-						<img src = "framework/images/wifi.png" class = "wIcons"/>
+						<img src = "framework/images/wifi.png" class = "wIcons" alt = "WiFi"/>
+
+						<h4 class = "wifiHeader">WiFi</h4>
+						<div class = "wifiTextC"><span class = "wifiText">Flamingos</span>
+						<img src = "framework/images/wifi.png" class = "wIcons" alt = "WiFi"/></div>
+						
+						<br />
+						<div class = "wifiTextC"><span class = "wifiText">Access Point</span>
+						<img src = "framework/images/wifi.png" class = "wIcons" alt = "WiFi"/></div>
+						
+						<br />
+						<div class = "wifiTextC"><span class = "wifiText">FreeWiFi</span>
+						<img src = "framework/images/wifi.png" class = "wIcons" alt = "WiFi"/></div>
+						
+
 					</div>
+
 				</div>
+			</div>
 			<div class = "desktop" onclick="closeSystem('wifiMenu');">
 				<div class = "desktopIcons">
 					<div class = "iconWrapper">
-						<img src = "framework/images/trash.png" class = "dIcons"/>
+						<img src = "framework/images/trash.png" class = "dIcons" alt = "Recycle Bin"/>
 						<span class = "iconText">Recycle Bin</span>
 					</div>
 				</div>
-				
+
 				<div class = "startMenu">
-					<a href = "#"><img src = "framework/images/startmenu.png" class = "startButton" /></a>
+					<a href = "#"><img src = "framework/images/startmenu.png" class = "startButton" alt = "Start Button"/></a>
 				</div>
 				<div class = "icons">
-					<img src = "framework/images/firefox.png" class = "tIcons"/>
-					<img src = "framework/images/explorer.png" class = "tIcons"/>
+					<img src = "framework/images/firefox.png" class = "tIcons" alt = "FireFox"/>
+					<img src = "framework/images/explorer.png" class = "tIcons" alt = "Windows Explorer"/>
 				</div>
-				
+
 				<div class = "taskbartime">
 					<span class = "time" id = "time">Loading</span>
 					<br />
 					<span class = "time" id = "date" onload="getTheDay();">Loading</span>
 				</div>
 			</div>
-<div class = "taskIcons">
+			<div class = "taskIcons">
 
-					<img src = "framework/images/battery.png" class = "taIcons"/>
-					<img src = "framework/images/wifi.png" class = "taIcons" onclick = "slideLeft('wifiMenu');"/>
-					<img src = "framework/images/volume.png" class = "taIcons" id = "volume" onclick = "swapIcon('volume','volume.png','mute.png');"/>
-				</div>
+				<img src = "framework/images/battery.png" class = "taIcons" alt = "Battery 95%"/>
+				<img src = "framework/images/wifi.png" class = "taIcons" alt = "WiFi" id = "wifi" onclick = "slideLeft('wifiMenu');"/>
+				<img src = "framework/images/volume.png" class = "taIcons" id = "volume" alt = "Volume" onclick = "swapIcon('volume','volume.png','mute.png');"/>
+			</div>
 		</body>
 </html>

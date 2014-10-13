@@ -167,6 +167,16 @@ html {
 	right:2em;
 	height:1em;
 }
+.wifiTextC
+{
+	transition:.4s ease-in;
+	padding:.5em;
+}
+.wifiTextC:hover
+{
+	width:90%;
+	box-shadow: 0px 0px 1em 100em rgba(255,255,255,.2) inset, 0px 0px 0px 1px rgba(0,0,0,.2), 0px 0px 1em 2px rgba(255,255,255,.2) inset;
+}
 /*ON OFF SWTICH  THANK YOU http://proto.io/freebies/onoff/*/
 .onoffswitch {
 	position: relative;
