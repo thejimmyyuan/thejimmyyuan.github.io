@@ -1,3 +1,5 @@
+/*THANKS ICONS8 FOR ICONS*/
+
 html, body, .wrapper {
 	padding: 0;
 	margin: 0;
@@ -27,7 +29,6 @@ html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	
 }
 /* D E S K T O P  E L E M E N T S */
 .startMenu {
@@ -36,6 +37,7 @@ html {
 	height: 2.5em;
 	background: rgba(41, 128, 185, .5);
 	width: 100%;
+	z-index: 99;
 	box-shadow: 0px 0px 1px rgba(0,0,0,.5);
 }
 .startButton {
@@ -52,6 +54,7 @@ html {
 }
 .taskbartime {
 	text-align: center;
+	z-index: 99;
 	position: absolute;
 	right: 1em;
 	bottom: 0;
@@ -69,6 +72,7 @@ html {
 	padding: .1em;
 	display: inline-block;
 	cursor: default;
+	z-index: 99;
 }
 .taskbartime:hover {
 	box-shadow: 0px .1em 0em .1em rgba(255,255,255,.2);
@@ -77,12 +81,14 @@ html {
 	position: absolute;
 	bottom: 0;
 	left: 4em;
+	z-index: 99;
 	padding-top: 1em;
 	margin-top: 1em;
 }
 .tIcons {
 	transition: .5s ease-out;
 	height: 1.8em;
+	z-index: 99;
 	position: relative;
 	bottom: -.25em;
 	padding: .35em 1em;
@@ -96,12 +102,14 @@ html {
 	position: absolute;
 	bottom: 0;
 	right: 5.5em;
+	z-index: 99;
 	padding-top: 1em;
 	margin-top: 1em;
 }
 .taIcons {
 	transition: .5s ease-out;
 	height: .85em;
+	z-index: 99;
 	position: relative;
 	padding: 0em .2em;
 	bottom: .4em;
@@ -155,79 +163,127 @@ html {
 }
 .wifiWrapper {
 	padding-left: 1em;
-	
 }
 .wifiText {
 	font-size: .8em;
 	color: white;
 }
-.wIcons
-{
-	position:absolute;
-	right:2em;
-	height:1em;
+.wIcons {
+	position: absolute;
+	right: 2em;
+	height: 1em;
 }
-.wifiTextC
-{
-	transition:.4s ease-in;
-	cursor:pointer;
-	padding:.5em;
+.wifiTextC {
+	transition: .4s ease-in;
+	cursor: pointer;
+	padding: .5em;
 }
-.wifiTextC:hover
-{
-	width:90%;
+.wifiTextC:hover {
+	width: 90%;
 	box-shadow: 0px 0px 1em 100em rgba(255,255,255,.2) inset, 0px 0px 0px 1px rgba(0,0,0,.2), 0px 0px 1em 2px rgba(255,255,255,.2) inset;
 }
 /* S T A R T  M E N U */
-.startMenuDesktop
-{
+.startMenuDesktop {
 	background: url(images/startmenubackground.png) no-repeat center center fixed;
 	/*background:#000;*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	width:100%;
-	min-height:100%;
-	position:absolute;
-	top:0;
-	left:-100%;
-	transition:.8s ease-in;
-	z-index:99;
-	
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	transition: .5s ease-in-out;
+	z-index: 98;
 }
-.startHeader
-{
+.startHeader {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	color: white;
-	font-size:3em;
-	margin:1em 2em;
-	float:left;
+	font-size: 3em;
+	margin: 1em 2em;
+	float: left;
+	cursor: default;
 }
-.nameIcon
-{
+.nameIcon {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	color: white;
-	margin:4em 5em;
-	float:right;
+	margin: 3.5em 4em;
+	float: right;
+	cursor: pointer;
+	padding: .5em 1em;
 }
-.nameWrapper
-{
-	float:left;
-	margin-right:1em;
+.nameWrapper {
+	float: left;
+	margin-right: 1em;
 }
-.userName
-{
-	
-	display:block;
+.nameIcon:hover {
+	box-shadow: 0 0 0em 10em #1F3A93 inset;
 }
-.portrait
+.userName {
+
+	display: block;
+}
+.portrait {
+	height: 3em;
+}
+.startHeaderSection {
+	height: 10em;
+}
+.tileIcon {
+	margin-top: 1em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tileText {
+	margin-top: 1.5em;
+	display: block;
+	font-family:calibri;
+	color: white;
+	font-size: .9em;
+}
+.picTile
 {
-	height:3em;
+	margin-top:6em;
+}
+/* P U R E */
+.pure-g > div {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: .3em;
+}
+.left-side {
+	margin-left: 5em;
+	width: 60%;
+}
+.boxItem
+{
+	transition:.4s ease-in;
+}
+.boxItem:hover
+{
+	transform:translateY(-.5em);
+	box-shadow: 0px 0px 1em .2em rgba(0,0,0,.2);
+}
+/* C A R D U I */
+.card {
+	background: white;
+	height: 6em;
+	padding: .5em;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.2);
 }
 
+.side {
+
+}
+.zpadding {
+
+}
 /*ON OFF SWTICH  THANK YOU http://proto.io/freebies/onoff/*/
 .onoffswitch {
 	position: relative;
@@ -306,4 +362,50 @@ html {
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
 	right: 0px;
+}
+/* C O L O R  G R A D I E N T S */
+.blue1 {
+
+	background: #2574A9;
+}
+.blue2 {
+	background: #4183D7;
+}
+.blue3 {
+	background: #3A539B;
+}
+.blue4
+{
+	background:#22313F;
+}
+.orange1 {
+	background: #E67E22;
+}
+.red1
+{
+	background: #96281B;
+}
+.purple1 {
+	background: #663399;
+}
+.purple2 {
+	background: #8E44AD;
+}
+.purple3
+{
+	background:#9B59B6;
+}
+.green1 {
+	background: #68C3A3;
+}
+.green2 {
+	background: #26A65B;
+}
+.desktopCard
+{
+	background: url(images/desktop.jpg);
+}
+.photosBg
+{
+	background: url(images/photos.png);
 }

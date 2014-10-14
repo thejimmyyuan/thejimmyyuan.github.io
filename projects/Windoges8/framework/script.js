@@ -20,14 +20,14 @@ function swapIcon(imgid, stateOne, stateTwo) {
 //Sliding
 var menu = false;
 function slideLeft(el) {
-	
+
 	menu = true;
 	document.getElementById(el).style.right = "0px";
 
 }
 
 function closeSystem(el) {
-	
+
 	if (menu) {
 		menu = false;
 		document.getElementById(el).style.right = "-18em";
@@ -37,8 +37,7 @@ function closeSystem(el) {
 //--------------------------------------------------------------------------------------------------------------------------------
 //Wifi
 var offWifi = false;
-function turnOffWifi()
-{
+function turnOffWifi() {
 	if (offWifi) {
 		document.getElementById("wifiOff").style.display = "block";
 		document.getElementById("textStatus").innerHTML = "On";
@@ -51,12 +50,27 @@ function turnOffWifi()
 		offWifi = true;
 	}
 }
+
 //--------------------------------------------------------------------------------------------------------------------------------
 //StartMenu
-function openMenu()
-{
-	document.getElementById("startMenuDesktop").style.left = "0px";
+startMenu = false;
+function openMenu() {
+	
+	if (startMenu) {
+		document.getElementById("startMenuDesktop").style.left = "-100%";
+		document.getElementById("startButton").style.background = "";
+		startMenu = false;
+	} 
+	else {
+		
+		document.getElementById("startMenuDesktop").style.left = "0px";
+		document.getElementById("startButton").style.background = "#2c3e50";
+		startMenu = true;
+	}
+
 }
+
+
 //--------------------------------------------------------------------------------------------------------------------------------
 //DAY
 function getTheDay() {

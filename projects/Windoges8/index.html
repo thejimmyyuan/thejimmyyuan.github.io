@@ -11,6 +11,8 @@
 		<link rel="stylesheet" type="text/css" href="framework/main-css.css">
 		<script src="framework/script.js"></script>
 		<link rel="icon" type="image/png" href="framework/images/shibe.png">
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
 		<meta name="description" content="" />
 		<meta name="author" content="Jimmy Yuan" />
@@ -70,9 +72,13 @@
 						<span class = "iconText">Recycle Bin</span>
 					</div>
 				</div>
-
+				
+				
+			<!-- TASK BAR -->
+				
+				
 				<div class = "startMenu">
-					<a href = "#"><img src = "framework/images/startmenu.png" class = "startButton" alt = "Start Button" onclick = "openMenu();"/></a>
+					<a href = "#"><img src = "framework/images/startmenu.png" class = "startButton" id = "startButton" alt = "Start Button" onclick = "openMenu();"/></a>
 				</div>
 				<div class = "icons">
 					<img src = "framework/images/firefox.png" class = "tIcons" alt = "FireFox"/>
@@ -91,16 +97,126 @@
 				<img src = "framework/images/wifi.png" class = "taIcons" alt = "WiFi" id = "wifi" onclick = "slideLeft('wifiMenu');"/>
 				<img src = "framework/images/volume.png" class = "taIcons" id = "volume" alt = "Volume" onclick = "swapIcon('volume','volume.png','mute.png');"/>
 			</div>
-			<div class = "startMenuDesktop" id = "startMenuDesktop">
-				<h1 class = "startHeader">Start</h1>
-				<div class = "nameIcon">
-					<div class = "nameWrapper">
-						<span class = "userName" style= "font-weight:300;">Jimmy</span>
+			
+			
+			<!-- START MENU -->
+			
+			
+			<div class = "startMenuDesktop" id = "startMenuDesktop" onclick="closeSystem('wifiMenu');">
+				<div class = "startHeaderSection">
+					<h1 class = "startHeader">Start</h1>
+					<div class = "nameIcon">
+						<div class = "nameWrapper">
+							<span class = "userName" style= "font-weight:300;">Jimmy</span>
 
-						<span class = "userName">Yuan</span>
+							<span class = "userName">Yuan</span>
+						</div>
+
+						<img src = "framework/images/jimmy.jpg" class = "portrait">
 					</div>
 
-					<img src = "framework/images/jimmy.jpg" class = "portrait">
+				</div>
+				<div class="pure-g left-side">
+					<div class="pure-u-8-24 boxItem">
+						<div class = "card green1">
+							<img class = "tileIcon" src = "framework/images/mail.png" />
+							<span class = "tileText">Mail</span>
+						</div>
+					</div>
+					<div class="pure-u-8-24 boxItem">
+						<div class = "card purple1">
+							<img class = "tileIcon" src = "framework/images/calender.png" />
+							<span class = "tileText">Calender</span>
+						</div>
+					</div>
+					<div class="pure-u-4-24 boxItem">
+						<div class = "card blue2">
+							<img class = "tileIcon" src = "framework/images/ie.png" />
+							<span class = "tileText">Internet Explorer</span>
+						</div>
+					</div>
+					<div class="pure-u-4-24 boxItem">
+						<div class = "card green2">
+							<img class = "tileIcon" src = "framework/images/store.png" />
+							<span class = "tileText">Store</span>
+						</div>
+					</div>
+					
+					<!-- SECOND -->
+					<div class="pure-u-8-24 boxItem">
+						<div class = "card orange1">
+							<img class = "tileIcon" src = "framework/images/people.png" />
+							<span class = "tileText">People</span>
+						</div>
+					</div>
+					<div class="pure-u-8-24 boxItem">
+						<div class = "card blue4 photosBg">
+							<img class = "tileIcon" src = "framework/images/picture.png" />
+							<span class = "tileText">Photos</span>
+						</div>
+					</div>
+					<div class="pure-u-4-24 boxItem">
+						<div class = "card purple2">
+							<img class = "tileIcon" src = "framework/images/map.png" />
+							<span class = "tileText">Maps</span>
+						</div>
+					</div>
+					<div class="pure-u-4-24 boxItem">
+						<div class = "card blue3">
+							<img class = "tileIcon" src = "framework/images/skydrive.png" />
+							<span class = "tileText">SkyDrive</span>
+						</div>
+					</div>
+					
+					<!-- THIRD -->
+					<div class="pure-u-8-24 boxItem">
+						<div class = "card purple3">
+							<img class = "tileIcon" src = "framework/images/messaging.png" />
+							<span class = "tileText">Messaging</span>
+						</div>
+					</div>
+					<div class="pure-u-8-24 boxItem">
+						<div class = "card red1">
+							<img class = "tileIcon" src = "framework/images/youtube.png" />
+							<span class = "tileText">Youtube</span>
+						</div>
+					</div>
+					<div class="pure-u-8-24 boxItem">
+						<div class = "card orange1">
+						<img class = "tileIcon" src = "framework/images/music.png" />
+							<span class = "tileText">Music</span>
+						</div>
+					</div>
+					<!-- FOURTH -->
+					<div class="pure-u-8-24 boxItem">
+						<div class = "card desktopCard">
+							<span class = "tileText picTile">Desktop</span>
+						</div>
+					</div>
+					<div class="pure-u-4-24 boxItem">
+						<div class = "card green1">
+							<img class = "tileIcon" src = "framework/images/xbox.png" />
+							<span class = "tileText">XBOX</span>
+						</div>
+					</div>
+					<div class="pure-u-4-24 boxItem">
+						<div class = "card red1">
+							<img class = "tileIcon" src = "framework/images/camera.png" />
+							<span class = "tileText">Camera</span>
+						</div>
+					</div>
+					<div class="pure-u-8-24 boxItem">
+						<div class = "card blue2">
+							<img class = "tileIcon" src = "framework/images/weather.png" />
+							<span class = "tileText">Weather</span>
+						</div>
+					</div>
+					
+					
+					
+					
+					
+					
 				</div>
 			</div>
 		</body>
