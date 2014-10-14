@@ -25,6 +25,7 @@
 			}, 1000);
 		</script>
 		<body onload="getTheDay();">
+
 			<div class = "wifiMenu" id = "wifiMenu">
 				<h2 class = "wifiHeader">Networks</h2>
 				<div class = "wifiWrapper">
@@ -41,17 +42,22 @@
 						<img src = "framework/images/wifi.png" class = "wIcons" alt = "WiFi"/>
 
 						<h4 class = "wifiHeader">WiFi</h4>
-						<div class = "wifiTextC"><span class = "wifiText">Flamingos</span>
-						<img src = "framework/images/wifi.png" class = "wIcons" alt = "WiFi"/></div>
-						
+						<div class = "wifiTextC">
+							<span class = "wifiText">Flamingos</span>
+							<img src = "framework/images/wifi.png" class = "wIcons" alt = "WiFi"/>
+						</div>
+
 						<br />
-						<div class = "wifiTextC"><span class = "wifiText">Access Point</span>
-						<img src = "framework/images/wifi.png" class = "wIcons" alt = "WiFi"/></div>
-						
+						<div class = "wifiTextC">
+							<span class = "wifiText">Access Point</span>
+							<img src = "framework/images/wifi.png" class = "wIcons" alt = "WiFi"/>
+						</div>
+
 						<br />
-						<div class = "wifiTextC"><span class = "wifiText">FreeWiFi</span>
-						<img src = "framework/images/wifi.png" class = "wIcons" alt = "WiFi"/></div>
-						
+						<div class = "wifiTextC">
+							<span class = "wifiText">FreeWiFi</span>
+							<img src = "framework/images/wifi.png" class = "wIcons" alt = "WiFi"/>
+						</div>
 
 					</div>
 
@@ -66,7 +72,7 @@
 				</div>
 
 				<div class = "startMenu">
-					<a href = "#"><img src = "framework/images/startmenu.png" class = "startButton" alt = "Start Button"/></a>
+					<a href = "#"><img src = "framework/images/startmenu.png" class = "startButton" alt = "Start Button" onclick = "openMenu();"/></a>
 				</div>
 				<div class = "icons">
 					<img src = "framework/images/firefox.png" class = "tIcons" alt = "FireFox"/>
@@ -84,6 +90,18 @@
 				<img src = "framework/images/battery.png" class = "taIcons" alt = "Battery 95%"/>
 				<img src = "framework/images/wifi.png" class = "taIcons" alt = "WiFi" id = "wifi" onclick = "slideLeft('wifiMenu');"/>
 				<img src = "framework/images/volume.png" class = "taIcons" id = "volume" alt = "Volume" onclick = "swapIcon('volume','volume.png','mute.png');"/>
+			</div>
+			<div class = "startMenuDesktop" id = "startMenuDesktop">
+				<h1 class = "startHeader">Start</h1>
+				<div class = "nameIcon">
+					<div class = "nameWrapper">
+						<span class = "userName" style= "font-weight:300;">Jimmy</span>
+
+						<span class = "userName">Yuan</span>
+					</div>
+
+					<img src = "framework/images/jimmy.jpg" class = "portrait">
+				</div>
 			</div>
 		</body>
 </html>

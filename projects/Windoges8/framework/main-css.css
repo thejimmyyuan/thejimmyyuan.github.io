@@ -178,6 +178,56 @@ html {
 	width:90%;
 	box-shadow: 0px 0px 1em 100em rgba(255,255,255,.2) inset, 0px 0px 0px 1px rgba(0,0,0,.2), 0px 0px 1em 2px rgba(255,255,255,.2) inset;
 }
+/* S T A R T  M E N U */
+.startMenuDesktop
+{
+	background: url(images/startmenubackground.png) no-repeat center center fixed;
+	/*background:#000;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width:100%;
+	min-height:100%;
+	position:absolute;
+	top:0;
+	left:-100%;
+	transition:.8s ease-in;
+	z-index:99;
+	
+}
+.startHeader
+{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: white;
+	font-size:3em;
+	margin:1em 2em;
+	float:left;
+}
+.nameIcon
+{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: white;
+	margin:4em 5em;
+	float:right;
+}
+.nameWrapper
+{
+	float:left;
+	margin-right:1em;
+}
+.userName
+{
+	
+	display:block;
+}
+.portrait
+{
+	height:3em;
+}
+
 /*ON OFF SWTICH  THANK YOU http://proto.io/freebies/onoff/*/
 .onoffswitch {
 	position: relative;
