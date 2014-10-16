@@ -71,6 +71,33 @@
 						<img src = "framework/images/trash.png" class = "dIcons" alt = "Recycle Bin"/>
 						<span class = "iconText">Recycle Bin</span>
 					</div>
+					<div id = "firefox">
+						<div class = "toptask">
+							<div class = "toptab">
+								FireFox
+							</div>
+							<div class = "close" onclick = "closeApp('firefox','foxIcon');">
+								X
+							</div>
+							<div class = "minimax">
+								+
+							</div>
+							<div class = "minimax">
+								_
+							</div>
+						</div>
+						<div class = "addressBar">
+							<span><img class = "arrow" src = "framework/images/left.png"/>
+							<img class = "arrow" src = "framework/images/right.png"/></span>
+							<input type = "text" class = "url" value = "http://www.thejimmyyuan.com/" id = "bar">
+							<a class = "go" onclick = "go();">Go</a>
+							<input type = "text" class = "search" placeholder = "Google Search">
+							<img class = "home" src = "framework/images/home.png"/>
+						</div>
+						<div class = "firefoxbody">
+							<iframe id = "frame" class = "brow" src ='http://www.thejimmyyuan.com/'></iframe>
+						</div>
+					</div>
 				</div>
 				
 				
@@ -81,7 +108,7 @@
 					<a href = "#"><img src = "framework/images/startmenu.png" class = "startButton" id = "startButton" alt = "Start Button" onclick = "openMenu();"/></a>
 				</div>
 				<div class = "icons">
-					<img src = "framework/images/firefox.png" class = "tIcons" alt = "FireFox"/>
+					<img src = "framework/images/firefox.png" class = "tIcons" alt = "FireFox" id = "foxIcon" onclick = "openApp('firefox','foxIcon');"/>
 					<img src = "framework/images/explorer.png" class = "tIcons" alt = "Windows Explorer"/>
 				</div>
 
