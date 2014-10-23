@@ -11,7 +11,7 @@ html, body, .wrapper {
 	overflow-y: hidden;
 }
 html {
-	background: url(images/desktop2.jpg) no-repeat center center fixed;
+	background: url(images/bluemountains.jpg) no-repeat center center fixed;
 	/*background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%); /* Chrome 10+, Saf5.1+ */
 	/*background: -moz-linear-gradient(90deg, #283048 10%, #859398 90%); /* FF3.6+ */
 	/*background: -ms-linear-gradient(90deg, #283048 10%, #859398 90%); /* IE10 */
@@ -35,7 +35,7 @@ html {
 	position: absolute;
 	bottom: 0;
 	height: 2.5em;
-	background: rgba(41, 128, 185, .5);
+	background: rgba(41, 128, 185, .8);
 	width: 100%;
 	z-index: 99;
 	box-shadow: 0px 0px 1px rgba(0,0,0,.5);
@@ -277,6 +277,11 @@ html {
 }
 .toptask {
 	height: 2em;
+	text-align:center;
+}
+.title
+{
+		
 }
 .toptab {
 	background: rgb(17,99,221); /* Old browsers */
@@ -318,8 +323,8 @@ html {
 	background: rgba(255,255,255,.1);
 	color: white;
 	font-size: 1em;
-	padding-left:.3em;
-	padding-right:.3em;
+	padding-left: .3em;
+	padding-right: .3em;
 	border-color: rgba(0,0,0,.3);
 	float: right;
 	cursor: default;
@@ -349,7 +354,7 @@ html {
 }
 /* F I R E F O X */
 #firefox {
-	display:none;
+	display: none;
 	outline-style: solid;
 	outline-width: thin;
 	outline-color: rgba(0,0,0,.2);
@@ -367,7 +372,7 @@ html {
 .addressBar {
 	line-height: 2em;
 	height: 2em;
-	padding-left:.5em;
+	padding-left: .5em;
 	padding-right: .5em;
 	vertical-align: middle;
 	outline-style: solid;
@@ -385,41 +390,37 @@ html {
 .arrow {
 
 	height: 1.5em;
-	vertical-align:middle;
+	vertical-align: middle;
 }
-.url
-{
-	font-family:calibri;
-	vertical-align:middle;
-	margin-left:.5em;
-	width:50em;
-	font-weight:400;
-	font-size:.6em;
+.url {
+	font-family: calibri;
+	vertical-align: middle;
+	margin-left: .5em;
+	width: 50em;
+	font-weight: 400;
+	font-size: .6em;
 }
-.search
-{
-	vertical-align:middle;
-	margin-left:.5em;
-	width:15em;
-	font-size:.6em;
-	font-family:calibri;
+.search {
+	vertical-align: middle;
+	margin-left: .5em;
+	width: 15em;
+	font-size: .6em;
+	font-family: calibri;
 }
-.go
-{
-	margin-left:.5em;
-	color:white;
-	font-size:.5em;
-	height: ..5em;
-	width:.5em;
-	padding:.5em;
-	vertical-align:middle;
-	cursor:default;
-	background:#2c3e50;
-	transition:.4s ease-in-out;
+.go {
+	margin-left: .5em;
+	color: white;
+	font-size: .5em;
+	height:  ..5em;
+	width: .5em;
+	padding: .5em;
+	vertical-align: middle;
+	cursor: default;
+	background: #2c3e50;
+	transition: .4s ease-in-out;
 }
-.go:hover
-{
-	background:#19B5FE;
+.go:hover {
+	background: #19B5FE;
 }
 .firefoxbody {
 	outline-style: solid;
@@ -429,11 +430,56 @@ html {
 	width: 100%;
 	height: 31em;
 }
-#frame
+#frame {
+	border-style: none;
+	height: 31em;
+	width: 100%;
+}
+/* E X P L O R E R */
+#explorer
 {
-	border-style:none;
-	height:31em;
-	width:100%;
+	display:none;
+	outline-style: solid;
+	outline-width: thin;
+	outline-color: rgba(0,0,0,.2);
+	position: absolute;
+	top: 3em;
+	left: 7em;
+	width: 50em;
+	height: 35em;
+	z-index: 99;
+	padding-right: .3em;
+	padding-left: .3em;
+	padding-bottom: .3em;
+	background: rgba(107, 185, 240,.8);
+}
+.ebody {
+	outline-style: solid;
+	outline-width: thin;
+	outline-color: rgba(0,0,0,.1);
+	background: white;
+	width: 100%;
+	height: 33em;
+}
+.titleIcon
+{
+	height:1em;
+	padding:.5em;
+	position:absolute;
+	left:0;
+}
+#explorer .close
+{
+	background: rgba(0,0,0,.4);
+}
+#explorer .close:hover
+{
+	background: rgba(207, 0, 15,.8);
+}
+.topcap{
+	padding:.5em;
+	color:#333;
+	display:inline-block;
 }
 /* C A R D U I */
 .card {

@@ -98,6 +98,24 @@
 							<iframe id = "frame" class = "brow" src ='http://www.thejimmyyuan.com/'></iframe>
 						</div>
 					</div>
+					<div id = "explorer">
+						<div class = "toptask">
+						<span><img src = "framework/images/explorer.png" class = "titleIcon" alt = "Windows Explorer"/></span><span class ="topcap">Explorer</span>
+							<div class = "close" onclick = "closeApp('explorer','expIcon');">
+								X
+							</div>
+							<div class = "minimax">
+								+
+							</div>
+							<div class = "minimax">
+								_
+							</div>
+							<div class = "ebody">
+								
+							</div>
+						</div>
+						
+					</div>
 				</div>
 				
 				
@@ -109,7 +127,7 @@
 				</div>
 				<div class = "icons">
 					<img src = "framework/images/firefox.png" class = "tIcons" alt = "FireFox" id = "foxIcon" onclick = "openApp('firefox','foxIcon');"/>
-					<img src = "framework/images/explorer.png" class = "tIcons" alt = "Windows Explorer"/>
+					<img src = "framework/images/explorer.png" class = "tIcons" alt = "Windows Explorer" id = "expIcon" onclick = "openApp('explorer','expIcon');"/>
 				</div>
 
 				<div class = "taskbartime">
@@ -238,12 +256,6 @@
 							<span class = "tileText">Weather</span>
 						</div>
 					</div>
-					
-					
-					
-					
-					
-					
 				</div>
 			</div>
 		</body>

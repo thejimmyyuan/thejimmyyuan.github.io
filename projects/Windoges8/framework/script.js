@@ -55,21 +55,19 @@ function turnOffWifi() {
 //StartMenu
 startMenu = false;
 function openMenu() {
-	
+
 	if (startMenu) {
 		document.getElementById("startMenuDesktop").style.left = "-100%";
 		document.getElementById("startButton").style.background = "";
 		startMenu = false;
-	} 
-	else {
-		
+	} else {
+
 		document.getElementById("startMenuDesktop").style.left = "0px";
 		document.getElementById("startButton").style.background = "#2c3e50";
 		startMenu = true;
 	}
 
 }
-
 
 //--------------------------------------------------------------------------------------------------------------------------------
 //DAY
