@@ -37,7 +37,7 @@ html {
 	height: 2.5em;
 	background: rgba(41, 128, 185, .8);
 	width: 100%;
-	z-index: 99;
+	z-index: 98;
 	box-shadow: 0px 0px 1px rgba(0,0,0,.5);
 }
 .startButton {
@@ -54,7 +54,7 @@ html {
 }
 .taskbartime {
 	text-align: center;
-	z-index: 99;
+	z-index: 98;
 	position: absolute;
 	right: 1em;
 	bottom: 0;
@@ -72,7 +72,7 @@ html {
 	padding: .1em;
 	display: inline-block;
 	cursor: default;
-	z-index: 99;
+	z-index: 98;
 }
 .taskbartime:hover {
 	box-shadow: 0px .1em 0em .1em rgba(255,255,255,.2);
@@ -81,14 +81,14 @@ html {
 	position: absolute;
 	bottom: 0;
 	left: 4em;
-	z-index: 99;
+	z-index: 98;
 	padding-top: 1em;
 	margin-top: 1em;
 }
 .tIcons {
 	transition: .5s ease-out;
 	height: 1.8em;
-	z-index: 99;
+	z-index: 98;
 	position: relative;
 	bottom: -.25em;
 	padding: .35em 1em;
@@ -102,7 +102,7 @@ html {
 	position: absolute;
 	bottom: 0;
 	right: 5.5em;
-	z-index: 99;
+	z-index: 98;
 	padding-top: 1em;
 	margin-top: 1em;
 }
@@ -277,11 +277,10 @@ html {
 }
 .toptask {
 	height: 2em;
-	text-align:center;
+	text-align: center;
 }
-.title
-{
-		
+.title {
+
 }
 .toptab {
 	background: rgb(17,99,221); /* Old browsers */
@@ -411,7 +410,7 @@ html {
 	margin-left: .5em;
 	color: white;
 	font-size: .5em;
-	height:  ..5em;
+	height:   ..5em;
 	width: .5em;
 	padding: .5em;
 	vertical-align: middle;
@@ -436,9 +435,8 @@ html {
 	width: 100%;
 }
 /* E X P L O R E R */
-#explorer
-{
-	display:none;
+#explorer {
+	display: none;
 	outline-style: solid;
 	outline-width: thin;
 	outline-color: rgba(0,0,0,.2);
@@ -453,33 +451,62 @@ html {
 	padding-bottom: .3em;
 	background: rgba(107, 185, 240,.8);
 }
+.addressBarEx {
+	text-align:left;
+	line-height: 2em;
+	height: 2em;
+	padding-left: .5em;
+	background:#fff;
+	padding-right: .5em;
+	vertical-align: middle;
+	outline-style: solid;
+	outline-width: thin;
+	outline-color: rgba(0,0,0,.2);
+}
+.optionsBar {
+	text-align: left;
+	height: 1.7em;
+	background: white;
+	border-bottom-style: solid;
+	border-width: thin;
+	border-color: rgba(0,0,0,.3);
+}
+.optionsButtons {
+
+	padding:.6em 1.5em;
+	font-size:.8em;
+	display: inline-block;
+	cursor:default;
+	transition:.2s ease-in-out;
+}
+.optionsButtons:hover{
+	background:#3A539B;
+	color:#fff;
+}
 .ebody {
 	outline-style: solid;
 	outline-width: thin;
 	outline-color: rgba(0,0,0,.1);
 	background: white;
 	width: 100%;
-	height: 33em;
+	height: 29.2em;
 }
-.titleIcon
-{
-	height:1em;
-	padding:.5em;
-	position:absolute;
-	left:0;
+.titleIcon {
+	height: 1em;
+	padding: .5em;
+	position: absolute;
+	left: 0;
 }
-#explorer .close
-{
+#explorer .close {
 	background: rgba(0,0,0,.4);
 }
-#explorer .close:hover
-{
+#explorer .close:hover {
 	background: rgba(207, 0, 15,.8);
 }
-.topcap{
-	padding:.5em;
-	color:#333;
-	display:inline-block;
+.topcap {
+	padding: .5em;
+	color: #333;
+	display: inline-block;
 }
 /* C A R D U I */
 .card {
