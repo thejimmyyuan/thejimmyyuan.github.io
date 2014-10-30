@@ -410,7 +410,7 @@ html {
 	margin-left: .5em;
 	color: white;
 	font-size: .5em;
-	height:   ..5em;
+	height:    ..5em;
 	width: .5em;
 	padding: .5em;
 	vertical-align: middle;
@@ -452,11 +452,11 @@ html {
 	background: rgba(107, 185, 240,.8);
 }
 .addressBarEx {
-	text-align:left;
+	text-align: left;
 	line-height: 2em;
 	height: 2em;
 	padding-left: .5em;
-	background:#fff;
+	background: #fff;
 	padding-right: .5em;
 	vertical-align: middle;
 	outline-style: solid;
@@ -473,15 +473,15 @@ html {
 }
 .optionsButtons {
 
-	padding:.6em 1.5em;
-	font-size:.8em;
+	padding: .6em 1.5em;
+	font-size: .8em;
 	display: inline-block;
-	cursor:default;
-	transition:.2s ease-in-out;
+	cursor: default;
+	transition: .2s ease-in-out;
 }
-.optionsButtons:hover{
-	background:#3A539B;
-	color:#fff;
+.optionsButtons:hover {
+	background: #3A539B;
+	color: #fff;
 }
 .ebody {
 	outline-style: solid;
@@ -507,6 +507,19 @@ html {
 	padding: .5em;
 	color: #333;
 	display: inline-block;
+}
+
+.sideBarExplorer {
+	float: left;
+	width: 25%;
+	height: 29.2em;
+	border-right-style: solid;
+	border-width: thin;
+	border-color:rgba(0,0,0,.1);
+}
+.mainExplorer {
+	width: 100%;
+	height: 29.2em;
 }
 /* C A R D U I */
 .card {
