@@ -70,6 +70,7 @@ html {
 	font-family:Helvetica;
 	display:block;
 	cursor:pointer;
+	text-decoration:none;
 }
 
 .button:hover
