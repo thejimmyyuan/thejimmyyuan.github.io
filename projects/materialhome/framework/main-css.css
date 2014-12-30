@@ -1,0 +1,66 @@
+/* M E H  R E S E T */
+html, body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	z-index:-2;
+}
+/* M E N U */
+.navbar
+{
+	background:#03A9F4;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:99;
+}
+.menu-inside
+{
+	padding:0 1em;
+}
+.brand-logo{
+	font-weight:100;
+}
+a
+{
+	color:#727272;
+}
+li a{
+	transition:.4s ease-in;
+}
+li a:hover 
+{
+	background:#fff;
+	color:#00b8d4;
+}
+/* C O N T E N T */
+#about
+{
+	background:#0288D1;
+	min-height:100%;
+}
+.about{
+	margin-top:7em;
+	background:#fFF;
+	width:30%;
+	z-index:1;
+}
+#pro
+{
+	background:#B3E5FC;
+	min-height:100%;
+}
+.com{
+	z-index:1;
+	background:white;
+}
+.company
+{
+	background:white;
+}
+.center
+{
+	margin-left:auto;
+	margin-right:auto;
+}
