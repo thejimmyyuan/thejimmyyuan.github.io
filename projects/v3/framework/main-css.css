@@ -169,6 +169,11 @@ h2
 {
 	color:white;
 }
+/* O V E R R I D E */
+#sidenav-overlay
+{
+	z-index:0;
+}
 /* C O L O R S */
 .none{
 	min-height:100%;
