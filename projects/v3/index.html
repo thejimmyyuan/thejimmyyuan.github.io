@@ -18,6 +18,9 @@
    <body>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="framework/materialize/js/materialize.min.js"></script>
+	    
+				  
+		
       <nav class = "navbar">
          <div class="nav-wrapper menu-inside">
             <a href="#" class="brand-logo">The Jimmy Yuan</a>
@@ -55,7 +58,7 @@
             <p></p>
          </div>
          <div class="col s12 m6 l8">
-            <a href = "#about" class = "button">v</a>
+            <a href = "#about" class = "waves-effect waves-light button">v</a>
          </div>
          <div class="col s12 m3 l2"></div>
       </div>
@@ -65,9 +68,10 @@
                <div class = "about">
                   <h1>About Me</h1>
                   <img class = "portrait" src="framework/images/jimmy.jpg">
-                  <p style = "font-weight:300;">
-                     Hello, my name is Jimmy Yuan. I'm a student from New York City currently attending Stony Brook University. I am majoring in Information Systems and minoring in Business. Though this site is complete, it can go through some design and UI changes (specifically color therapy) which I will update periodically.
+                  <p class="flow-text" style = "font-weight:300;">
+                     Hello, my name is Jimmy Yuan. I am a student from New York City currently attending Stony Brook University. I am majoring in Information Systems and minoring in Business. Though this site is complete, it can go through some design and UI changes (specifically color therapy) which I will update periodically.
                   </p>
+				   <a href = "#pro" class = "waves-teal button" style = "color:#212121;">v</a>
                </div>
             </div>
          </div>
@@ -153,6 +157,9 @@
                         </div>
                      </div>
                   </div>
+				
+				   <a href = "#acad" class = "button">v</a>
+				  
                </div>
             </div>
          </div>
@@ -163,7 +170,7 @@
                <div class = "acad">
                   <h1>Academics</h1>
                   <h2>G.P.A - 3.51</h2>
-                  <p>
+                  <p class="flow-text">
                   <ul class = "classes center">
                      <li>ISE 218 - Foundations of Hardware</li>
                      <li>ISE 305 - Database Design and Practice</li>
@@ -175,6 +182,7 @@
                      <li>CSE 214 - Computer Science II (Data Structures/Algorithms)</li>
                   </ul>
                   </p>
+				   <a href = "#proj" class = "button">v</a>
                </div>
             </div>
          </div>
@@ -185,18 +193,20 @@
                <div class = "proj">
                   <h1>Projects</h1>
                   <h2>Some things I work on</h2>
+				   <a href = "#contact" class = "button">v</a>
                </div>
             </div>
          </div>
       </div>
       <div class = "row asphalt" id = "contact">
          <div class="col s12 m12 l12">
-            <h2>Contact Jimmy</h2>
+            <h2>Contact Me!</h2>
             <span class = "handlers smedia"> <a href = "#"><img src = "framework/images/icons/Facebook.png" /></a> <a href = "https://www.linkedin.com/in/thejimmyyuan"><img src = "framework/images/icons/LinkedIn.png" /></a> <a href = "https://github.com/thejimmyyuan/"><img src = "framework/images/icons/GitHub.png" /></a></span>
          </div>
          <span class = "footermsg">
-		 © JIMMY YUAN 2014 • TheJimmyYuan
+		 © JIMMY YUAN 2014 • <a href = "#" class = "footerlink">TheJimmyYuan</a>
 		 </span>
+		  <a href = "#content" id = "top">^</a>
       </div>
       <script>
          $(document).ready(function() {
@@ -216,6 +226,8 @@
     }
   });
 });
+
+ $('.button-collapse').sideNav({menuWidth: 240, activationWidth: 70});
          });
       </script>
    </body>
