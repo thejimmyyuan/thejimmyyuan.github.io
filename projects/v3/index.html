@@ -71,7 +71,7 @@
                   <p class="flow-text" style = "font-weight:300;">
                      Hello, my name is Jimmy Yuan. I am a student from New York City currently attending Stony Brook University. I am majoring in Information Systems and minoring in Business. Though this site is complete, it can go through some design and UI changes (specifically color therapy) which I will update periodically.
                   </p>
-				   <a href = "#pro" class = "waves-teal button" style = "color:#212121;">v</a>
+				   <a href = "#pro" class = "waves-teal button" style = "margin:0;color:#212121;">v</a>
                </div>
             </div>
          </div>
@@ -211,7 +211,7 @@
       <script>
          $(document).ready(function() {
          	$(".button-collapse").sideNav();
-			
+			 $('.button-collapse').sideNav({menuWidth: 240, activationWidth: 70});
 			$(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -227,7 +227,7 @@
   });
 });
 
- $('.button-collapse').sideNav({menuWidth: 240, activationWidth: 70});
+ 
          });
       </script>
    </body>
