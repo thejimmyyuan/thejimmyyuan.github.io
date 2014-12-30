@@ -21,6 +21,10 @@ html, body{
 {
 color:#212121;
 }
+.side-nav
+{
+	z-index:99;
+}
 .menu-inside
 {
 	padding:0 1em;
