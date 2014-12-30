@@ -69,15 +69,7 @@ li a:hover
 	font-weight:500;
 	color:rgba(255,255,255,5);
 }
-h1
-{
-	font-weight:300;
-}
-h2
-{
-	font-weight:200;
-	font-size:2em;
-}
+
 .intro
 {
 	margin-top:15%;
@@ -173,6 +165,15 @@ h2
 #sidenav-overlay
 {
 	z-index:0;
+}
+h1
+{
+	font-weight:300;
+}
+h2
+{
+	font-weight:200;
+	font-size:2em;
 }
 /* C O L O R S */
 .none{
