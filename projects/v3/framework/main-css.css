@@ -122,10 +122,13 @@ li a:hover
 	border:solid thin white;
 	cursor:pointer;
 	transition:.4s ease-in;
+	
 }
 .projectCard:hover{
 	background:white;
 	color:#212121;
+	transform:scale(1.1);
+	
 }
 /* M I S C */
 #top
