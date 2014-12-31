@@ -171,7 +171,8 @@ li a:hover
 {
 	display:inline-block;
 	font-weight:300;
-	padding-top:2em;
+	padding-top:3em;
+	
 }
 .footerlink 
 {
@@ -180,6 +181,24 @@ li a:hover
 .footerlink a:visited
 {
 	color:white;
+}
+#resume
+{
+	display:inline-block;
+	color:white;
+	font-weight:100;
+	font-size:1.2em;
+	padding:.7em;
+	border:solid thin white;
+	transition:.4s ease-in;
+	cursor:pointer;
+	border-radius:.1em;
+}
+#resume:hover
+{
+	background:rgba(255, 255, 255,1);
+	color:#212121;
+	
 }
 /* O V E R R I D E */
 #sidenav-overlay
