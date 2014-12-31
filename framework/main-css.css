@@ -1,170 +1,242 @@
-/*Jimmy Yuan*/
-
-/*The defaults and the general page info*/
-
-html, body, .wrapper {
+/* M E H  R E S E T */
+html, body{
 	padding: 0;
 	margin: 0;
 	width: 100%;
 	height: 100%;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-}
-html {
-	/*background: url(images/bg2.jpg) no-repeat center center fixed; */
+	z-index:-2;
 	
-	/*background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%); /* Chrome 10+, Saf5.1+ */
-	/*background: -moz-linear-gradient(90deg, #283048 10%, #859398 90%); /* FF3.6+ */
-	/*background: -ms-linear-gradient(90deg, #283048 10%, #859398 90%); /* IE10 */
-	/*background: -o-linear-gradient(90deg, #283048 10%, #859398 90%); /* Opera 11.10+ */
-	/*background: linear-gradient(90deg, #283048 10%, #859398 90%); /* W3C */
-	background:#2c3e50;
+}
+/* M E N U */
+.navbar
+{
+	background:rgba(255,255,255,.9);
+	position:fixed;
+	top:0;
+	left:0;
+	color:#fff;
+	z-index:99;
+}
+.navbar a
+{
+color:#212121;
+}
+.side-nav
+{
+	z-index:99;
+}
+.menu-inside
+{
+	padding:0 1em;
+}
+.brand-logo{
+	font-weight:100;
+}
+.portrait{
+	width:30%;
+}
+a
+{
+	color:#727272;
+}
+li a{
+	transition:.4s ease-in;
+}
+li a:hover 
+{
+	background:#0288D1;
+	color:#fff;
+}
+/* C O N T E N T */
+#content{
+	min-height:100%;
+	height:100%;
+	color:#fff;
+	background:url('images/bg2.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-size: 1.1em;
+	text-align:center;
 }
-.container {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+.row
+{
+
 }
-/*----------------------------------------Line Menu*----------------------------------------*/
-.nav {
-	width: 100%;
-	text-align: center;
-	font-weight: 100;
-	/*
-	 border-bottom-style:solid;
-	 border-width:thin;
-	 border-color:rgba(232,226,229,.5);*/
+.name
+{
+	letter-spacing:.1em;
+	font-weight:500;
+	color:rgba(255,255,255,5);
 }
-.menuButton {
-	display: inline-block;
-	border-bottom-style: solid;
-	border-width: thin;
-	color: #333;
-	border-color: #E8E2E5;
-	padding: 1em;
-	cursor: pointer;
-	margin-right: -.3em;
-	transition: .3s ease-in;
+
+.intro
+{
+	margin-top:15%;
+	
 }
-.menuButton:hover {
-	border-color: black;
-	color: black;
+.about
+{
+	margin-top:15%;
+	color:#212121;
 }
-.menuButton[aria-pressed=true] {
-	border-color: black;
+.pro
+{
+	margin-top:10%;
+	color:#fff;
+	 	
 }
-/*----------------------------------------Content Styling*----------------------------------------*/
-.content {
-	margin: 1em;
-	display: none;
+.com{
+	z-index:1;
+	background:white;
+	color:#212121;
 }
-.portrait {
-	width: 42%;
+.mdi-navigation-more-vert
+{
+	cursor:pointer;
 }
-#about {
-	display: block;
+.acad
+{
+	margin-top:10%;
+	color:#fff;
 }
-.handlers
+.classes
+{
+	text-align:left;
+	width:50%;
+}
+.proj
+{
+	margin-top:10%;
+	color:#fff;
+}
+.projectCard
+{
+	display:block;
+	padding:7em 0em;
+	vertical-align:middle;
+	color:white;
+	font-size:1.2em;
+	font-family:Helvetica;
+	font-weight:100;
+	border:solid thin white;
+	cursor:pointer;
+	transition:.4s ease-in;
+	
+}
+.projectCard:hover{
+	background:white;
+	color:#212121;
+	transform:scale(1.1);
+	
+}
+/* M I S C */
+#top
+{
+	position:fixed;
+	right:0;
+	bottom:0;
+	font-size:3em;
+	color:#fff;
+	padding-top:.3em;
+	border:none;
+	padding-right:1em;
+	transition:.4s ease-in;
+	padding-bottom:.15em;
+	font-weight:100;
+}
+#top:hover
+{
+	color:#212121;
+	
+}
+.button
 {
 	display:inline-block;
-	font-size:.9em;
-	padding-left:.5em;
-	
+	padding:0 .5em;
+	font-size:4em;
+	font-weight:100;
+	transition:.4s ease-in;
+	color:#fff;
+	border:solid thin white;
+	margin-top:.5em;
 }
-.smedia
+.button:hover
 {
-	padding-top:.5em;
+	background:rgba(2, 136, 209,.2);
+	color:white;
+	transform: translate(0,.3em);
 }
-/*----------------------------------------General Stuff----------------------------------------*/
-.panel {
-
-	margin-top: 2em;
-	width: 60%;
-	text-align: center;
-	padding: 2em 1em;
-	position: relative;
-	max-width: 960px;
-	border-radius: 5px;
-	background: white;
-	margin-bottom: 2em;
-	box-shadow: 0px 0px 3px rgba(0,0,0,.5);
-}
-.center {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-h1 {
-	font-size: 3em;
-	letter-spacing: .15em;
-	font-weight: 300;
-	font-family: 'Lato', sans-serif;
-}
-h2 {
-	font-family: 'Noto Sans', sans-serif;
-	font-weight: 100;
-}
-h3 {
-	margin-top: 2em;
-	margin-bottom: 1em;
-}
-hr {
-	border: 0;
-	width: 100%;
-	height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(232,226,229,0), rgba(232,226,229,0.75), rgba(232,226,229,0));
-	background-image: -moz-linear-gradient(left, rgba(232,226,229,0), rgba(232,226,229,0.75), rgba(232,226,229,0));
-	background-image: -ms-linear-gradient(left, rgba(232,226,229,0), rgba(232,226,229,0.5), rgba(232,226,229,0));
-	background-image: -o-linear-gradient(left, rgba(232,226,229,0), rgba(232,226,229,0.5), rgba(232,226,229,0));
-}
-.text {
-	width: 90%;
-	text-align: justify;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-	line-height: 1.5em;
-	font-weight: 200;
-}
-
-.footer {
-	color: white;
-	text-align: center;
-	margin-bottom: 1em;
-}
-.footer a {
-	color: white;
-}
-/* M E D I A  Q U E R I E S */
-@media (max-width: 900px)
+.footermsg
 {
-.menuButton{
-	font-size:.8em;
-	padding: 1em .5em;
+	display:inline-block;
+	font-weight:300;
+	padding-top:2em;
 }
-.panel{
-	width:90%
-
-	
+.footerlink 
+{
+	color:white;
+}
+.footerlink a:visited
+{
+	color:white;
+}
+/* O V E R R I D E */
+#sidenav-overlay
+{
+	z-index:0;
+}
+h1
+{
+	font-weight:300;
+}
+h2
+{
+	font-weight:200;
+	font-size:2em;
+}
+/* C O L O R S */
+.none{
+	min-height:100%;
+	height:auto;
+	margin-bottom:0;
+}
+.pom
+{
+	background:#c0392b;
+		min-height:100%;
+	height:auto;
+	margin-bottom:0;
+}
+.midnight
+{
+	background:#2c3e50;
+		min-height:100%;
+	height:auto;
+	margin-bottom:0;
+}
+.turquoise
+{
+	background:#1abc9c;	
+		min-height:100%;
+	height:auto;
+	margin-bottom:0;
+}
+.asphalt
+{
+	background:#34495e;
+	margin-bottom:0;
+}
+.black{
+	padding:1em;
 }
 
-}
-@media (max-width:500px)
+/* G E N E R I C */
+.center
 {
-	 .portrait
-{
-	width:90%;
+	margin-left:auto;
+	margin-right:auto;
 }
-}
-@media (min-width: 1500px)
-{
-.panel{
-	max-width:1080px;
-}
+.left{
+	text-align:left;
 }
