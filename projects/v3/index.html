@@ -18,9 +18,6 @@
    <body>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="framework/materialize/js/materialize.min.js"></script>
-	    
-				  
-		
       <nav class = "navbar">
          <div class="nav-wrapper menu-inside">
             <a href="#" class="brand-logo">The Jimmy Yuan</a>
@@ -37,7 +34,7 @@
                <li>
                   <a href="#proj">Projects</a>
                </li>
-			     <li>
+               <li>
                   <a href="#contact">Contact</a>
                </li>
             </ul>
@@ -71,7 +68,7 @@
                   <p class="flow-text" style = "font-weight:300;">
                      Hello, my name is Jimmy Yuan. I am a student from New York City currently attending Stony Brook University. I am majoring in Information Systems and minoring in Business. Though this site is complete, it can go through some design and UI changes (specifically color therapy) which I will update periodically.
                   </p>
-				   <a href = "#pro" class = "waves-teal button" style = "margin:0;color:#212121;">v</a>
+                  <a href = "#pro" class = "waves-teal button" style = "margin:0;color:#212121;">v</a>
                </div>
             </div>
          </div>
@@ -157,9 +154,7 @@
                         </div>
                      </div>
                   </div>
-				
-				   <a href = "#acad" class = "button">v</a>
-				  
+                  <a href = "#acad" class = "button">v</a>
                </div>
             </div>
          </div>
@@ -182,7 +177,7 @@
                      <li>CSE 214 - Computer Science II (Data Structures/Algorithms)</li>
                   </ul>
                   </p>
-				   <a href = "#proj" class = "button">v</a>
+                  <a href = "#proj" class = "button">v</a>
                </div>
             </div>
          </div>
@@ -193,7 +188,22 @@
                <div class = "proj">
                   <h1>Projects</h1>
                   <h2>Some things I work on</h2>
-				   <a href = "#contact" class = "button">v</a>
+                  <div class="col s10 offset-s1 m6 l3">
+                     <a href = "#" class = "projectCard">Windows 8 UI
+					 </a>
+                  </div>
+                  <div class="col s10 offset-s1 m6 l3">
+                     <a href = "#" class = "projectCard">Windows Aero UI</a>
+                  </div>
+                  <div class="col s10 offset-s1 m6 l3">
+                     <a href = "#" class = "projectCard">Dashboard</a>
+                  </div>
+                  <div class="col s10 offset-s1 m6 l3">
+                     <a href = "#" class = "projectCard">?</a>
+                  </div>
+                  <p>
+                     <a href = "#contact" class = "button">v</a>
+                  </p>
                </div>
             </div>
          </div>
@@ -204,19 +214,19 @@
             <span class = "handlers smedia"> <a href = "#"><img src = "framework/images/icons/Facebook.png" /></a> <a href = "https://www.linkedin.com/in/thejimmyyuan"><img src = "framework/images/icons/LinkedIn.png" /></a> <a href = "https://github.com/thejimmyyuan/"><img src = "framework/images/icons/GitHub.png" /></a></span>
          </div>
          <span class = "footermsg">
-		 © JIMMY YUAN 2014 • <a href = "#" class = "footerlink">TheJimmyYuan</a>
-		 </span>
-		  <a href = "#content" id = "top">^</a>
+         © JIMMY YUAN 2014 • <a href = "#" class = "footerlink">TheJimmyYuan</a>
+         </span>
+         <a href = "#content" id = "top">^</a>
       </div>
       <script>
          $(document).ready(function() {
              $(".button-collapse").sideNav();
              
-			 $('.button-collapse').sideNav({
+         $('.button-collapse').sideNav({
                  menuWidth: 240,
                  activationWidth: 70
              });
-			 
+         
              $(function() {
                  $('a[href*=#]:not([href=#])').click(function() {
                      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -231,8 +241,8 @@
                      }
                  });
              });
-
-
+         
+         
          });
       </script>
    </body>

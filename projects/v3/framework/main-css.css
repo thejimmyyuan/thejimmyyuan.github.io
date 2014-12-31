@@ -110,6 +110,23 @@ li a:hover
 	margin-top:10%;
 	color:#fff;
 }
+.projectCard
+{
+	display:block;
+	padding:7em 0em;
+	vertical-align:middle;
+	color:white;
+	font-size:1.2em;
+	font-family:Helvetica;
+	font-weight:100;
+	border:solid thin white;
+	cursor:pointer;
+	transition:.4s ease-in;
+}
+.projectCard:hover{
+	background:white;
+	color:#212121;
+}
 /* M I S C */
 #top
 {
@@ -210,6 +227,7 @@ h2
 .black{
 	padding:1em;
 }
+
 /* G E N E R I C */
 .center
 {
