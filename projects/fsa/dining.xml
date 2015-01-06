@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<dining>
 <location>
 	<name>Student Activities Center</name>
 	<monday>9,10,11,12,13,14,15,16,17,18,19</monday>
@@ -7,7 +8,7 @@
 	<thursday>9,10,11,12,13,14,15,16,17,18,19</thursday>
 	<friday>9,10,11,12,13,14,15,16,17,18,19</friday>
 	<saturday>9,10,11,12,13,14,15,16,17,18,19</saturday>
-	<sunday>9,10,11,12,13,14,15,16,17,18,19</sundy>
+	<sunday>9,10,11,12,13,14,15,16,17,18,19</sunday>
 </location>
 <location>
 	<name>Administration Cart</name>
@@ -16,8 +17,8 @@
 	<wednesday>8,9,10,11,12,13,14</wednesday>
 	<thursday>8,9,10,11,12,13,14</thursday>
 	<friday>8,9,10,11,12,13,14</friday>
-	<saturday></saturday>
-	<sunday></sundy>
+	<saturday>0</saturday>
+	<sunday>0</sunday>
 </location>
 <location>
 	<name>Starbucks (Union)</name>
@@ -27,8 +28,9 @@
 	<thursday>8,9,10,11,12,13,14,15</thursday>
 	<friday>8,9,10,11,12,13,14</friday>
 	<saturday>0</saturday>
-	<sunday>0</sundy>
+	<sunday>0</sunday>
 </location>
+</dining>
 <!--
 <location>
 <name>Stony Brook Union</name>
@@ -38,7 +40,7 @@
 <thursday></thursday>
 <friday></friday>
 <saturday></saturday>
-<sunday></sundy>
+<sunday></sunday>
 </location>
 <location>
 <name>Jasmine</name>
@@ -48,7 +50,7 @@
 <thursday></thursday>
 <friday></friday>
 <saturday></saturday>
-<sunday></sundy>
+<sunday></sunday>
 
 </location>
 <location>
@@ -59,6 +61,6 @@
 <thursday></thursday>
 <friday></friday>
 <saturday></saturday>
-<sunday></sundy>
+<sunday></sunday>
 </location>
 -->

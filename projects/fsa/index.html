@@ -20,24 +20,24 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	</head>
 
-	<body>
+	<body onload = "loadXMLDoc('dining.xml');">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="framework/materialize/js/materialize.min.js"></script>
 		<form>
 			<div class = "row">
-				<div class="col s4">
+				<div class="col s4 offset-s1">
 					<label>Where</label>
-					<select>
-						<option value="" disabled selected></option>
+					<select id = "where">
+						<option value="" selected disabled>&nbsp;</option>
 						<option value="SAC">Student Activities Center</option>
 						<option value="adminCart">Administration Cart</option>
 						<option value="sbU">Starbucks (Union)</option>
 					</select>
 				</div>
-				<div class="col s4">
+				<div class="col s3">
 					<label>Day</label>
-					<select>
-						<option value="" disabled selected></option>
+					<select id = "day">
+						<option value="-1" disabled selected>&nbsp;</option>
 						<option value="monday">Monday</option>
 						<option value="tuesday">Tuesday</option>
 						<option value="wednesday">Wednesday</option>
@@ -48,10 +48,10 @@
 
 					</select>
 				</div>
-				<div class="col s4">
+				<div class="col s3">
 					<label>Time</label>
-					<select>
-						<option value="" disabled selected></option>
+					<select id = "time">
+						<option value="-1" disabled selected>&nbsp;</option>
 						<option value="8">8:00AM</option>
 						<option value="9">9:00AM</option>
 						<option value="10">10:00AM</option>
@@ -72,7 +72,7 @@
 			</div>
 			<div class = "row">
 				<div class = "col s12" style = "text-align:center;">
-					<a class="waves-effect waves-light btn-large" onclick="loadXMLDoc('dining.xml')">Submit</a>
+					<a class="waves-effect waves-light btn-large" onclick="check();">Submit</a>
 				</div>
 			</div>
 
