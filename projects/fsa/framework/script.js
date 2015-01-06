@@ -52,10 +52,56 @@ function populateArray()
 function check()
 {
 	var whereValue = document.getElementById("where").value;
-	alert(whereValue);
+	if(whereValue == -1)
+	{
+		displayResult();
+	}
 }
+var places = new Array;
 function displayResult(){
-	alert("beeyetch");
+	places = [];
+	clearDiv("results");
+	var dayValue = document.getElementById("day").value;
+	var timeValue = document.getElementById("time").value;
+
+	
+	for(i = 0; i < diningAreas.length; i++)
+	{
+		var hours = diningAreas[i][dayValue].split(",");
+		for(z = 0; z <hours.length;z++)
+		{
+			if(timeValue == hours[z])
+			{
+				places.push(diningAreas[i]);
+			}
+		}
+		
+	}
+	list = document.createElement("ul");
+	list.className = "collection with-header";
+	header = document.createElement("li");
+	header.className = "collection-header";
+	header.innerHTML = "Places which are Open";
+	list.appendChild(header);
+	
+	
+	for(k = 0; k<places.length; k++)
+	{
+		
+		
+		openPlace = document.createElement("li");
+		openPlace.className = "collection-item";
+		openPlace.innerHTML = places[k].name;
+		list.appendChild(openPlace);
+	}
+	document.getElementById("results").appendChild(list);
+}
+function clearDiv(div)
+{
+	var myNode = document.getElementById(div);
+	while (myNode.firstChild) {
+    myNode.removeChild(myNode.firstChild);
+}
 }
 /*
 function showSchedule()

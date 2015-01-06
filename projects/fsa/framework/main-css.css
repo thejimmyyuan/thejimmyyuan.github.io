@@ -20,21 +20,17 @@ html {
 	background-size: cover;
 	
 }
-.banner{
-	color:white;
-	background:#D32F2F;
-	padding:1em;
-	margin-bottom:1em;
-}
-.section{
-	text-align:center;
-	color:white;
-	font-weight:400;
-	background:#FF5252;
-}
-.cbox
+
+.result
 {
+	display:block;
 	padding:1em;
+	font-size:1em;
+	
+}
+/* O V E R R I D E */
+.collection-header{
+	font-size:1.5em;
 }
 /* G E N E R I C */
 .center
