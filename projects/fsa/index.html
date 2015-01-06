@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Where to Eat</title>
+		<meta name="description" content="">
+		<meta name="author" content="Jimmy Yuan">
+		<link type="text/css" rel="stylesheet" href="framework/materialize/css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="framework/main-css.css"/>
+		<script src="framework/script.js"></script>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	</head>
+
+	<body>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="framework/materialize/js/materialize.min.js"></script>
+		<form>
+			<div class = "row">
+				<div class="col s4">
+					<label>Where</label>
+					<select>
+						<option value="" disabled selected></option>
+						<option value="SAC">Student Activities Center</option>
+						<option value="adminCart">Administration Cart</option>
+						<option value="sbU">Starbucks (Union)</option>
+					</select>
+				</div>
+				<div class="col s4">
+					<label>Day</label>
+					<select>
+						<option value="" disabled selected></option>
+						<option value="monday">Monday</option>
+						<option value="tuesday">Tuesday</option>
+						<option value="wednesday">Wednesday</option>
+						<option value="thursday">Thursday</option>
+						<option value="friday">Friday</option>
+						<option value="saturday">Saturday</option>
+						<option value="sunday">Sunday</option>
+
+					</select>
+				</div>
+				<div class="col s4">
+					<label>Time</label>
+					<select>
+						<option value="" disabled selected></option>
+						<option value="8">8:00AM</option>
+						<option value="9">9:00AM</option>
+						<option value="10">10:00AM</option>
+						<option value="11">11:00AM</option>
+						<option value="12">12:00PM</option>
+						<option value="13">1:00PM</option>
+						<option value="14">2:00PM</option>
+						<option value="15">3:00PM</option>
+						<option value="16">4:00PM</option>
+						<option value="17">5:00PM</option>
+						<option value="18">6:00PM</option>
+						<option value="19">7:00PM</option>
+						<option value="20">8:00PM</option>
+						<option value="21">9:00PM</option>
+
+					</select>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col s12" style = "text-align:center;">
+					<a class="waves-effect waves-light btn-large" onclick="loadXMLDoc('dining.xml')">Submit</a>
+				</div>
+			</div>
+
+		</form>
+
+		<script>
+			$(document).ready(function() {
+			$('select').material_select();
+			});
+		</script>
+	</body>
+</html>

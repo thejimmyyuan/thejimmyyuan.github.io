@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<location>
+	<name>Student Activities Center</name>
+	<monday>9,10,11,12,13,14,15,16,17,18,19</monday>
+	<tuesday>9,10,11,12,13,14,15,16,17,18,19</tuesday>
+	<wednesday>9,10,11,12,13,14,15,16,17,18,19</wednesday>
+	<thursday>9,10,11,12,13,14,15,16,17,18,19</thursday>
+	<friday>9,10,11,12,13,14,15,16,17,18,19</friday>
+	<saturday>9,10,11,12,13,14,15,16,17,18,19</saturday>
+	<sunday>9,10,11,12,13,14,15,16,17,18,19</sundy>
+</location>
+<location>
+	<name>Administration Cart</name>
+	<monday>8,9,10,11,12,13,14</monday>
+	<tuesday>8,9,10,11,12,13,14</tuesday>
+	<wednesday>8,9,10,11,12,13,14</wednesday>
+	<thursday>8,9,10,11,12,13,14</thursday>
+	<friday>8,9,10,11,12,13,14</friday>
+	<saturday></saturday>
+	<sunday></sundy>
+</location>
+<location>
+	<name>Starbucks (Union)</name>
+	<monday>8,9,10,11,12,13,14,15</monday>
+	<tuesday>8,9,10,11,12,13,14,15</tuesday>
+	<wednesday>8,9,10,11,12,13,14,15</wednesday>
+	<thursday>8,9,10,11,12,13,14,15</thursday>
+	<friday>8,9,10,11,12,13,14</friday>
+	<saturday>0</saturday>
+	<sunday>0</sundy>
+</location>
+<!--
+<location>
+<name>Stony Brook Union</name>
+<monday></monday>
+<tuesday></tuesday>
+<wednesday></wednesday>
+<thursday></thursday>
+<friday></friday>
+<saturday></saturday>
+<sunday></sundy>
+</location>
+<location>
+<name>Jasmine</name>
+<monday></monday>
+<tuesday></tuesday>
+<wednesday></wednesday>
+<thursday></thursday>
+<friday></friday>
+<saturday></saturday>
+<sunday></sundy>
+
+</location>
+<location>
+<name>Roth Cafeteria</name>
+<monday></monday>
+<tuesday></tuesday>
+<wednesday></wednesday>
+<thursday></thursday>
+<friday></friday>
+<saturday></saturday>
+<sunday></sundy>
+</location>
+-->

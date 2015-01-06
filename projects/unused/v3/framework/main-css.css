@@ -21,6 +21,14 @@ html, body{
 {
 color:#212121;
 }
+#nav-mobile
+{
+	z-index:99;
+}
+.mdi-navigation-menu
+{
+	z-index:99;
+}
 .side-nav
 {
 	z-index:99;
