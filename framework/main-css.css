@@ -188,7 +188,7 @@ li a:hover
 	color:white;
 	font-weight:100;
 	font-size:1.2em;
-	padding:.7em;
+	padding:.7em 2em;
 	border:solid thin white;
 	transition:.4s ease-in;
 	cursor:pointer;

@@ -4,34 +4,15 @@
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Dogfalo/materialize?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Materialize, a CSS Framework based on material design
 
-### Current Version : v0.94.0
+### Current Version : v0.93.0
 
-## Sass Requirements:
-- Ruby Sass 3.3+, LibSass 0.6+
+##Requirements:
+- Ruby Sass 4.3+, LibSass 0.6+
 
 ##Supported Browsers:
 Chrome 35+, Firefox 31+, Safari 7+, IE 10+
 
 ##Changelog
-
-- v0.94.0
-  - Sidenav supports right edge positioning
-  - Responsive Embeds
-  - Image Vertical align classes
-  - border-box added
-  - Variable file created
-  - Pushpin added
-  - Tooltips support all directions
-  - Layout helper classes added
-  - Materialbox Fixes
-  - Form Element Enhancements
-  - Navbar supports search bar
-  - Waves fixes
-  - Materialbox Captions
-  - Image Slider Fixes
-
-- v0.93.1
-  - Flexbox Sticky Footer removed due to IE incompatibility
 
 - v0.93.0
   - Card Reveal
