@@ -92,7 +92,7 @@ function displayResult() {
 		
 		divBody = document.createElement("div");
 		divBody.className = "collapsible-body";
-		divBody.innerHTML = "<p>hi</p>";
+		divBody.innerHTML = "INFO TBD";
 		
 		
 		openPlace.appendChild(divTitle);
@@ -104,6 +104,10 @@ function displayResult() {
 	placeTitle.innerHTML = "Places which are Open";
 	document.getElementById("results").appendChild(placeTitle);
 	document.getElementById("results").appendChild(list);
+	
+	  $(document).ready(function(){
+        $('.collapsible').collapsible();
+      });
 }
 
 function clearDiv(div) {
