@@ -37,7 +37,7 @@
 				<div class="col s3">
 					<label>Day</label>
 					<select id = "day">
-						<option value="-1" disabled selected>&nbsp;</option>
+						<option value="-1" selected>&nbsp;</option>
 						<option value="monday">Monday</option>
 						<option value="tuesday">Tuesday</option>
 						<option value="wednesday">Wednesday</option>
@@ -51,7 +51,7 @@
 				<div class="col s3">
 					<label>Time</label>
 					<select id = "time">
-						<option value="-1" disabled selected>&nbsp;</option>
+						<option value="-1" selected>&nbsp;</option>
 						<option value="8">8:00AM</option>
 						<option value="9">9:00AM</option>
 						<option value="10">10:00AM</option>
@@ -88,7 +88,9 @@
 		<script>
 			$(document).ready(function() {
 			$('select').material_select();
+			 $('.collapsible').collapsible({ "accordion" : false });
 			});
+			
 		</script>
 	</body>
 </html>
