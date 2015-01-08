@@ -63,7 +63,6 @@ function check() {
 }
 
 var places = new Array;
-
 function displayResult() {
 	places = [];
 	clearDiv("results");
@@ -85,29 +84,32 @@ function displayResult() {
 	for ( k = 0; k < places.length; k++) {
 
 		openPlace = document.createElement("li");
-		
+
 		divTitle = document.createElement("div");
 		divTitle.className = "collapsible-header";
-		divTitle.innerHTML = "<p>" + places[k].name + "</p>";
-		
-		divBody = document.createElement("div");
-		divBody.className = "collapsible-body";
-		divBody.innerHTML = "INFO TBD";
-		
-		
-		openPlace.appendChild(divTitle);
-		openPlace.appendChild(divBody);
-		
-		list.appendChild(openPlace);
-	}
-	placeTitle = document.createElement("h3");
-	placeTitle.innerHTML = "Places which are Open";
-	document.getElementById("results").appendChild(placeTitle);
-	document.getElementById("results").appendChild(list);
-	
-	  $(document).ready(function(){
-        $('.collapsible').collapsible();
-      });
+		divTitle.innerHTML = places[k].name;
+		divTitle.id="d_" + k;
+		divTitle.onclick = function() {
+			appendtheTable(this);
+		}
+	divBody = document.createElement("div");
+	divBody.className = "collapsible-body tableInsertion";
+	divBody.id = "d" + k;
+
+	openPlace.appendChild(divTitle);
+	openPlace.appendChild(divBody);
+
+	list.appendChild(openPlace);
+}
+
+placeTitle = document.createElement("h3");
+placeTitle.innerHTML = "Places which are Open";
+document.getElementById("results").appendChild(placeTitle);
+document.getElementById("results").appendChild(list);
+
+$(document).ready(function() {
+	$('.collapsible').collapsible();
+});
 }
 
 function clearDiv(div) {
@@ -117,15 +119,23 @@ function clearDiv(div) {
 	}
 }
 
-function showSchedule() {
-	clearDiv("results");
-	var whereValue = document.getElementById("where").value;
+function showSchedule(optional, title) {
+
+	var text;
+	if (optional != null) {
+		whereAppend = optional;
+		text = title;
+	} else {
+		clearDiv("results");
+		whereAppend = "results";
+		var e = document.getElementById("where");
+		text = e.options[e.selectedIndex].text;
+	}
 	table = document.createElement('table');
 	theader = document.createElement('thead');
 	trow = document.createElement('tr');
 	th = document.createElement('th');
-	var e = document.getElementById("where");
-	var text = e.options[e.selectedIndex].text;
+
 	th.innerHTML = text;
 	th2 = document.createElement('th');
 	th2.innerHTML = "Opens";
@@ -137,7 +147,7 @@ function showSchedule() {
 	theader.appendChild(trow);
 	tbody = document.createElement('tbody');
 	table.appendChild(theader);
-	document.getElementById('results').appendChild(table);
+	document.getElementById(whereAppend).appendChild(table);
 	var times = new Array;
 	var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 	for ( i = 0; i < diningAreas.length; i++) {
@@ -151,35 +161,28 @@ function showSchedule() {
 			times.push(diningAreas[i].sunday.split(","));
 		}
 	}
-	for(k = 0; k < days.length; k++)
-	{
+	for ( k = 0; k < days.length; k++) {
 		tr = document.createElement("tr");
 		td = document.createElement("td");
 		td2 = document.createElement("td");
 		td3 = document.createElement("td");
-		
+
 		timeOpen = times[k][0];
-		if(timeOpen == 0)
-		{
+		if (timeOpen == 0) {
 			timeOpen = "Closed";
-		}
-		else if(timeOpen > 12)
-		{
+		} else if (timeOpen > 12) {
 			timeOpen = timeOpen - 12 + "PM";
-		}
-		else{
+		} else {
 			timeOpen = timeOpen + "AM";
 		}
 		last = times[k].length;
 		td.innerHTML = days[k];
 		td2.innerHTML = timeOpen;
 		timeLast = times[k][last - 1];
-		if(timeLast > 12)
-		{
-			timeLast = timeLast - 12 +"PM";
+		if (timeLast > 12) {
+			timeLast = timeLast - 12 + "PM";
 		}
-		if(timeLast == 0)
-		{
+		if (timeLast == 0) {
 			timeLast = "Closed";
 		}
 		td3.innerHTML = timeLast;
@@ -188,16 +191,22 @@ function showSchedule() {
 		tr.appendChild(td3);
 		tbody.appendChild(tr);
 	}
-table.appendChild(tbody);
+	table.appendChild(tbody);
 }
 
+function appendtheTable(e) {
+	var num = e.id.split("_");
+	showSchedule("d" + num[1], e.innerHTML);	
+	
+	
+}
 
 /*
-for ( i = 0; i < locations.length; i++) {
+ for ( i = 0; i < locations.length; i++) {
 
-}
+ }
 
-}
+ }
 
  var day = document.getElementById("day");
  var weekday = day.options[day.selectedIndex].value;
