@@ -72,7 +72,7 @@ function displayResult() {
 	for ( i = 0; i < diningAreas.length; i++) {
 		var hours = diningAreas[i][dayValue].split(",");
 		for ( z = 0; z < hours.length; z++) {
-			if (timeValue == hours[z]) {
+			if (hours[z] - timeValue == .5 || hours[z] - timeValue == 0 ) {
 				places.push(diningAreas[i]);
 			}
 		}
@@ -171,16 +171,38 @@ function showSchedule(optional, title) {
 		if (timeOpen == 0) {
 			timeOpen = "Closed";
 		} else if (timeOpen > 12) {
-			timeOpen = timeOpen - 12 + "PM";
+			timeOpen = timeOpen - 12;
+			var half = timeOpen.split(".");
+			if(half[1] == "5")
+			{
+				timeOpen = half[0] + ":30PM";
+			}
+			else{
+				timeOpen = half[0] + "PM";
+			}
 		} else {
-			timeOpen = timeOpen + "AM";
+			var half = timeOpen.split(".");
+			if(half[1] == "5")
+			{
+				timeOpen = half[0] + ":30AM";
+			}
 		}
 		last = times[k].length;
 		td.innerHTML = days[k];
 		td2.innerHTML = timeOpen;
 		timeLast = times[k][last - 1];
 		if (timeLast > 12) {
-			timeLast = timeLast - 12 + "PM";
+			timeLast = timeLast - 12;
+			timeLast = timeLast.toString();
+			var lastHalf = timeLast.split(".");
+			if(lastHalf[1] == "5")
+			{
+				timeLast = lastHalf[0] + ":30PM";
+			}
+			else
+			{
+				timeLast = lastHalf[0] + "PM";
+			}
 		}
 		if (timeLast == 0) {
 			timeLast = "Closed";
@@ -196,30 +218,8 @@ function showSchedule(optional, title) {
 
 function appendtheTable(e) {
 	var num = e.id.split("_");
+	clearDiv("d" + num[1]);
 	showSchedule("d" + num[1], e.innerHTML);	
 	
 	
 }
-
-/*
- for ( i = 0; i < locations.length; i++) {
-
- }
-
- }
-
- var day = document.getElementById("day");
- var weekday = day.options[day.selectedIndex].value;
-
- var time = document.getElementById("time");
- var timeofDay = time.options[time.selectedIndex].value;
-
- if(timeofDay == -1 && weekday == -1)
- {
- showSchedule();
- }
- else if(location == -1)
- {
- displayResult();
- }
- */
