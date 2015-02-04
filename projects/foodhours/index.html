@@ -23,6 +23,26 @@
 	<body onload = "loadXMLDoc('dining.xml');">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="framework/materialize/js/materialize.min.js"></script>
+		<div class = "row center">
+			<h3>Where to Eat?</h3>
+			<h5>This site is designed to let you find out which places are open at what times</h5>
+			<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Help!</a>
+
+			<!-- Modal Structure -->
+			<div id="modal1" class="modal">
+				<h4>How to use</h4>
+				<p>
+				To find out the schedule of a place, simply select the place and click and submit.
+			</p>
+			<p>
+				To find out if a place is open on a certain day at a certain time, select a day and time and click submit. If you press the results, a 7-day schedule will appear.
+			</p>
+				<div class="action-bar">
+					<a href="#" class="waves-effect waves-blue btn-flat modal-action modal-close">Got it!</a>
+				</div>
+			</div>
+			
+		</div>
 		<form>
 			<div class = "row">
 				<div class="col s4 offset-s1">
@@ -118,9 +138,9 @@
 		</form>
 		<div class = "row">
 			<div class = "col s6 offset-s3" style = "text-align:center;">
-					
+
 				<div id = "results">
-				
+
 				</div>
 			</div>
 		</div>
@@ -131,7 +151,7 @@
 				$('.collapsible').collapsible({
 					"accordion" : false
 				});
-				
+			 $('.modal-trigger').leanModal();
 			});
 
 		</script>
