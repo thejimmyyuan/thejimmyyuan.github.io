@@ -72,7 +72,7 @@ function displayResult() {
 	for ( i = 0; i < diningAreas.length; i++) {
 		var hours = diningAreas[i][dayValue].split(",");
 		for ( z = 0; z < hours.length; z++) {
-			if (hours[z] - timeValue == .5 || hours[z] - timeValue == 0 ) {
+			if (hours[z] - timeValue == .5 || hours[z] - timeValue == 0) {
 				places.push(diningAreas[i]);
 			}
 		}
@@ -88,28 +88,28 @@ function displayResult() {
 		divTitle = document.createElement("div");
 		divTitle.className = "collapsible-header";
 		divTitle.innerHTML = places[k].name;
-		divTitle.id="d_" + k;
+		divTitle.id = "d_" + k;
 		divTitle.onclick = function() {
 			appendtheTable(this);
 		}
-	divBody = document.createElement("div");
-	divBody.className = "collapsible-body tableInsertion";
-	divBody.id = "d" + k;
+		divBody = document.createElement("div");
+		divBody.className = "collapsible-body tableInsertion";
+		divBody.id = "d" + k;
 
-	openPlace.appendChild(divTitle);
-	openPlace.appendChild(divBody);
+		openPlace.appendChild(divTitle);
+		openPlace.appendChild(divBody);
 
-	list.appendChild(openPlace);
-}
+		list.appendChild(openPlace);
+	}
 
-placeTitle = document.createElement("h3");
-placeTitle.innerHTML = "Places which are Open";
-document.getElementById("results").appendChild(placeTitle);
-document.getElementById("results").appendChild(list);
+	placeTitle = document.createElement("h3");
+	placeTitle.innerHTML = "Places which are Open";
+	document.getElementById("results").appendChild(placeTitle);
+	document.getElementById("results").appendChild(list);
 
-$(document).ready(function() {
-	$('.collapsible').collapsible();
-});
+	$(document).ready(function() {
+		$('.collapsible').collapsible();
+	});
 }
 
 function clearDiv(div) {
@@ -171,40 +171,53 @@ function showSchedule(optional, title) {
 		if (timeOpen == 0) {
 			timeOpen = "Closed";
 		} else if (timeOpen > 12) {
+		
 			timeOpen = timeOpen - 12;
+			timeOpen = timeOpen.toString();
 			var half = timeOpen.split(".");
-			if(half[1] == "5")
-			{
+			if (half[1] == "5") {
 				timeOpen = half[0] + ":30PM";
-			}
-			else{
+			} else {
 				timeOpen = half[0] + "PM";
 			}
+
+		} else if (timeOpen == 12) {
+			timeOpen = timeOpen + "PM";
 		} else {
 			var half = timeOpen.split(".");
-			if(half[1] == "5")
-			{
+			if (half[1] == "5") {
 				timeOpen = half[0] + ":30AM";
+			} else {
+				timeOpen = half[0] + "AM";
 			}
 		}
 		last = times[k].length;
 		td.innerHTML = days[k];
 		td2.innerHTML = timeOpen;
 		timeLast = times[k][last - 1];
-		if (timeLast > 12) {
+		if (timeLast > 24) {
+			timeLast = timeLast - 24;
+			timeLast = timeLast.toString();
+			var lastHalf = timeLast.split(".");
+			if (lastHalf[1] == "5") {
+				timeLast = lastHalf[0] + ":30AM";
+			} else {
+				timeLast = lastHalf[0] + "AM";
+			}
+		}
+		else if(timeLast > 12)
+		{
 			timeLast = timeLast - 12;
 			timeLast = timeLast.toString();
 			var lastHalf = timeLast.split(".");
-			if(lastHalf[1] == "5")
-			{
+			if (lastHalf[1] == "5") {
 				timeLast = lastHalf[0] + ":30PM";
-			}
-			else
-			{
+			} else {
 				timeLast = lastHalf[0] + "PM";
 			}
 		}
-		if (timeLast == 0) {
+		else
+		{			
 			timeLast = "Closed";
 		}
 		td3.innerHTML = timeLast;
@@ -219,7 +232,6 @@ function showSchedule(optional, title) {
 function appendtheTable(e) {
 	var num = e.id.split("_");
 	clearDiv("d" + num[1]);
-	showSchedule("d" + num[1], e.innerHTML);	
-	
-	
+	showSchedule("d" + num[1], e.innerHTML);
+
 }
