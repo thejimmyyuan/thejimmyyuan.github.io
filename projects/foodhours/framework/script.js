@@ -233,14 +233,3 @@ function appendtheTable(e) {
 
 }
 
-function reset() {
-	console.log("start");
-	$(document).ready(function() {
-	$('#where').prop('selectedIndex', 0);
-	$('#day').prop('selectedIndex', 0);
-	$('#time').prop('selectedIndex', 0);
-
-	});
-	
-	console.log("end");
-}
