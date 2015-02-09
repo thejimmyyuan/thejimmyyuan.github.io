@@ -12,7 +12,7 @@
 		<meta name="author" content="Jimmy Yuan">
 		<link type="text/css" rel="stylesheet" href="framework/materialize/css/materialize.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="framework/main-css.css"/>
-		<script src="framework/script.js"></script>
+		
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
@@ -23,6 +23,7 @@
 	<body onload = "loadXMLDoc('dining.xml');">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="framework/materialize/js/materialize.min.js"></script>
+		<script src="framework/script.js"></script>
 		<div class = "row center">
 			<h3>Where to Eat?</h3>
 			<p>
@@ -92,7 +93,7 @@
 				</div>
 			</div>
 			<div class = "row">
-				<h4 class= "center">Or</h4>
+				<h4 class= "center">or</h4>
 			</div>
 			<div class = "row">
 				<div class="col s12 m4 l4 offset-m4 offset-l4">
@@ -115,7 +116,7 @@
 					<label>Time</label>
 					<select id = "time">
 						<option value="-1" selected>&nbsp;</option>
-						<option value="7.5">7:30AM</option>
+						<option value="7">7:00AM</option>
 						<option value="8">8:00AM</option>
 						<option value="9">9:00AM</option>
 						<option value="10">10:00AM</option>
@@ -144,7 +145,8 @@
 			<div class = "row">
 				<div class = "col s12" style = "text-align:center;">
 					<a class="waves-effect waves-light red darken-1 btn-large" onclick="check();">Submit</a>
-
+					<a class="waves-effect waves-light red darken-1 btn-large" id = "btn_reset">Reset</a>
+					
 				</div>
 			</div>
 
@@ -165,6 +167,13 @@
 					"accordion" : false
 				});
 				$('.modal-trigger').leanModal();
+				
+				$('#btn_reset').click(function(e) {
+        $('select').each(function() {
+            //$(this).find('option:first').attr('selected',true);
+            $(this).prop('selectedIndex',0);
+        })
+    });
 			});
 
 		</script>

@@ -132,6 +132,7 @@ function showSchedule(optional, title) {
 		text = e.options[e.selectedIndex].text;
 	}
 	table = document.createElement('table');
+	table.className = "hoverable";
 	theader = document.createElement('thead');
 	trow = document.createElement('tr');
 	th = document.createElement('th');
@@ -171,7 +172,7 @@ function showSchedule(optional, title) {
 		if (timeOpen == 0) {
 			timeOpen = "Closed";
 		} else if (timeOpen > 12) {
-		
+
 			timeOpen = timeOpen - 12;
 			timeOpen = timeOpen.toString();
 			var half = timeOpen.split(".");
@@ -204,9 +205,7 @@ function showSchedule(optional, title) {
 			} else {
 				timeLast = lastHalf[0] + "AM";
 			}
-		}
-		else if(timeLast > 12)
-		{
+		} else if (timeLast > 12) {
 			timeLast = timeLast - 12;
 			timeLast = timeLast.toString();
 			var lastHalf = timeLast.split(".");
@@ -215,9 +214,7 @@ function showSchedule(optional, title) {
 			} else {
 				timeLast = lastHalf[0] + "PM";
 			}
-		}
-		else
-		{			
+		} else {
 			timeLast = "Closed";
 		}
 		td3.innerHTML = timeLast;
@@ -236,11 +233,14 @@ function appendtheTable(e) {
 
 }
 
-function reset()
-{
-	alert("YA");
-	document.getElementById("where").selectedIndex = 0;
-	document.getElementById("day").selectedIndex = 0;
-	document.getElementById("time").selectedIndex = 0;
-	alert("da");
+function reset() {
+	console.log("start");
+	$(document).ready(function() {
+	$('#where').prop('selectedIndex', 0);
+	$('#day').prop('selectedIndex', 0);
+	$('#time').prop('selectedIndex', 0);
+
+	});
+	
+	console.log("end");
 }
