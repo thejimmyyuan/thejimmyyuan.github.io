@@ -132,7 +132,7 @@ function showSchedule(optional, title) {
 		text = e.options[e.selectedIndex].text;
 	}
 	table = document.createElement('table');
-	table.className = "hoverable";
+	table.className = "hoverable centered";
 	theader = document.createElement('thead');
 	trow = document.createElement('tr');
 	th = document.createElement('th');
