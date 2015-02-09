@@ -32,6 +32,19 @@ html {
 {
 	padding:1em;
 }
+.reset
+{
+	display:inline-block;
+	background:#e53935;
+	border:none;
+	padding:1em 3em;
+	color:white;
+}
+.pad
+{
+	margin:0;
+	padding:0;
+}
 /* O V E R R I D E */
 .collection-header{
 	font-size:1.5em;
