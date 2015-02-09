@@ -1,343 +1,113 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<dining>
-<location>
-	<name>Student Activities Center</name>
-	<monday>7.5,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22</monday>
-	<tuesday>7.5,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22</tuesday>
-	<wednesday>7.5,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22</wednesday>
-	<thursday>7.5,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22</thursday>
-	<friday>7.5,8,9,10,11,12,13,14,15,16,17,18,19,20</friday>
-	<saturday>12,13,14,15,16,17,18</saturday>
-	<sunday>12,13,14,15,16,17,18</sunday>
-</location>
-<location>
-	<name>Union Deli</name>
-	<monday>7.5,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</monday>
-	<tuesday>7.5,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</tuesday>
-	<wednesday>7.5,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</wednesday>
-	<thursday>7.5,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</thursday>
-	<friday>7.5,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</friday>
-	<saturday>9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</saturday>
-	<sunday>9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</sunday>
-</location>
-<location>
-	<name>Starbucks (Union)</name>
-	<monday>8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</monday>
-	<tuesday>8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</tuesday>
-	<wednesday>8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</wednesday>
-	<thursday>8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</thursday>
-	<friday>8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</friday>
-	<saturday>11,12,13,14,15,16,17,18,19,20,21,22,23,24</saturday>
-	<sunday>11,12,13,14,15,16,17,18,19,20,21,22,23,24</sunday>
-</location>
-<location>
-	<name>Delancey Street</name>
-	<monday>12,13,14,15,16,17,18,19</monday>
-	<tuesday>12,13,14,15,16,17,18,19</tuesday>
-	<wednesday>12,13,14,15,16,17,18,19</wednesday>
-	<thursday>12,13,14,15,16,17,18,19</thursday>
-	<friday>12,13,14</friday>
-	<saturday>0</saturday>
-	<sunday>0</sunday>
-</location>
-<location>
-	<name>Picantes</name>
-	<monday>11,12,13,14,15,16,17,18,19,20,21,22</monday>
-	<tuesday>11,12,13,14,15,16,17,18,19,20,21,22</tuesday>
-	<wednesday>11,12,13,14,15,16,17,18,19,20,21,22</wednesday>
-	<thursday>11,12,13,14,15,16,17,18,19,20,21,22</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20,21,22</friday>
-	<saturday>0</saturday>
-	<sunday>0</sunday>
-</location>
-<location>
-	<name>Ignite</name>
-	<monday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26</monday>
-	<tuesday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26</tuesday>
-	<wednesday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26</wednesday>
-	<thursday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26</friday>
-	<saturday>17.5,18,19,20,21,22</saturday>
-	<sunday>17.5,18,19,20,21,22</sunday>
-</location>
-<location>
-	<name>U-Pick</name>
-	<monday>11,12,13,14,15,16,17,18,19,20,21,22</monday>
-	<tuesday>11,12,13,14,15,16,17,18,19,20,21,22</tuesday>
-	<wednesday>11,12,13,14,15,16,17,18,19,20,21,22</wednesday>
-	<thursday>11,12,13,14,15,16,17,18,19,20,21,22</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20,21,22</friday>
-	<saturday>0</saturday>
-	<sunday>0</sunday>
-</location>
-<location>
-	<name>Halal</name>
-	<monday>11,12,13,14,15,16,17,18,19,20,21,22</monday>
-	<tuesday>11,12,13,14,15,16,17,18,19,20,21,22</tuesday>
-	<wednesday>11,12,13,14,15,16,17,18,19,20,21,22</wednesday>
-	<thursday>11,12,13,14,15,16,17,18,19,20,21,22</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20,21,22</friday>
-	<saturday>0</saturday>
-	<sunday>0</sunday>
-</location>
-<location>
-	<name>Green Street Cafe</name>
-	<monday>11,12,13,14,15,16,17,18,19,20,21,22</monday>
-	<tuesday>11,12,13,14,15,16,17,18,19,20,21,22</tuesday>
-	<wednesday>11,12,13,14,15,16,17,18,19,20,21,22</wednesday>
-	<thursday>11,12,13,14,15,16,17,18,19,20,21,22</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20,21,22</friday>
-	<saturday>0</saturday>
-	<sunday>0</sunday>
-</location>
-<location>
-	<name>Buenos Nachos Express</name>
-	<monday>22.5,23,24,25,26</monday>
-	<tuesday>22.5,23,24,25,26</tuesday>
-	<wednesday>22.5,23,24,25,26</wednesday>
-	<thursday>22.5,23,24,25,26</thursday>
-	<friday>22.5,23,24,25,26</friday>
-	<saturday>17.5,18,19,20,21,22,23,24,25,26</saturday>
-	<sunday>17.5,18,19,20,21,22,23,24,25,26</sunday>
-</location>
-<location>
-	<name>Brunch</name>
-	<monday>0</monday>
-	<tuesday>0</tuesday>
-	<wednesday>0</wednesday>
-	<thursday>0</thursday>
-	<friday>0</friday>
-	<saturday>10.5,11,12,13,14,15</saturday>
-	<sunday>10.5,11,12,13,14,15</sunday>
-</location>
-<location>
-	<name>Native Spice</name>
-	<monday>11,12,13,14,15,16,17,18,19,20,21,22</monday>
-	<tuesday>11,12,13,14,15,16,17,18,19,20,21,22</tuesday>
-	<wednesday>11,12,13,14,15,16,17,18,19,20,21,22</wednesday>
-	<thursday>11,12,13,14,15,16,17,18,19,20,21,22</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20,21,22</friday>
-	<saturday>17.5,18,19,20,21,22</saturday>
-	<sunday>17.5,18,19,20,21,22</sunday>
-</location>
-<location>
-	<name>Late Night</name>
-	<monday>22.5,23,24,25,26</monday>
-	<tuesday>22.5,23,24,25,26</tuesday>
-	<wednesday>22.5,23,24,25,26</wednesday>
-	<thursday>22.5,23,24,25,26</thursday>
-	<friday>22.5,23,24,25,26</friday>
-	<saturday>22.5,23,24,25,26</saturday>
-	<sunday>22.5,23,24,25,26</sunday>
-</location>
-<location>
-	<name>Corner Cafe</name>
-	<monday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</monday>
-	<tuesday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</tuesday>
-	<wednesday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</wednesday>
-	<thursday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</thursday>
-	<friday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</friday>
-	<saturday>8.5,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</saturday>
-	<sunday>8.5,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</sunday>
-</location>
-<location>
-	<name>Bob's BBQ</name>
-	<monday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22.5</monday>
-	<tuesday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22.5</tuesday>
-	<wednesday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22.5</wednesday>
-	<thursday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22.5</thursday>
-	<friday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22.5</friday>
-	<saturday>10.5,11,12,13,14,15,16,17,18,19,20,21,22.5</saturday>
-	<sunday>10.5,11,12,13,14,15,16,17,18,19,20,21,22.5</sunday>
-</location>
-<location>
-	<name>Kelly Deli</name>
-	<monday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</monday>
-	<tuesday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</tuesday>
-	<wednesday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</wednesday>
-	<thursday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</thursday>
-	<friday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</friday>
-	<saturday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26</saturday>
-	<sunday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26</sunday>
-</location>
-<location>
-	<name>Chef Jet Breakfast</name>
-	<monday>0</monday>
-	<tuesday>0</tuesday>
-	<wednesday>0</wednesday>
-	<thursday>0</thursday>
-	<friday>0</friday>
-	<saturday>10.5,11,12,13,14,15</saturday>
-	<sunday>10.5,11,12,13,14,15</sunday>
-</location>
-<location>
-	<name>Chef Jet Dinner</name>
-	<monday>11,12,13,14,15,16,17,18,19,20,21,22</monday>
-	<tuesday>11,12,13,14,15,16,17,18,19,20,21,22</tuesday>
-	<wednesday>11,12,13,14,15,16,17,18,19,20,21,22</wednesday>
-	<thursday>11,12,13,14,15,16,17,18,19,20,21,22</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20,21,22</friday>
-	<saturday>0</saturday>
-	<sunday>0</sunday>
-</location>
-<location>
-	<name>International Market</name>
-	<monday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</monday>
-	<tuesday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</tuesday>
-	<wednesday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</wednesday>
-	<thursday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</friday>
-	<saturday>15.5,16,17,18,19,20,21,22,23,24,25,26,27</saturday>
-	<sunday>15.5,16,17,18,19,20,21,22,23,24,25,26,27</sunday>
-</location>
-<location>
-	<name>Grab N Go</name>
-	<monday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</monday>
-	<tuesday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</tuesday>
-	<wednesday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</wednesday>
-	<thursday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</thursday>
-	<friday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</friday>
-	<saturday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</saturday>
-	<sunday>7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</sunday>
-</location>
-<location>
-	<name>Soup and Salad</name>
-	<monday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24</monday>
-	<tuesday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24</tuesday>
-	<wednesday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24</wednesday>
-	<thursday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24</thursday>
-	<friday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24</friday>
-	<saturday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24</saturday>
-	<sunday>10.5,11,12,13,14,15,16,17,18,19,20,21,22,23,24</sunday>
-</location>
-<location>
-	<name>Pizza,Pasta and Panini</name>
-	<monday>11,12,13,14,15,16,17,18,19,20,21,22,23,24</monday>
-	<tuesday>11,12,13,14,15,16,17,18,19,20,21,22,23,24</tuesday>
-	<wednesday>11,12,13,14,15,16,17,18,19,20,21,22,23,24</wednesday>
-	<thursday>11,12,13,14,15,16,17,18,19,20,21,22,23,24</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20,21,22,23,24</friday>
-	<saturday>11,12,13,14,15,16,17,18,19,20,21,22,23,24</saturday>
-	<sunday>11,12,13,14,15,16,17,18,19,20,21,22,23,24</sunday>
-</location>
-<location>
-	<name>Starbucks (Roth)</name>
-	<monday>8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</monday>
-	<tuesday>8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</tuesday>
-	<wednesday>8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</wednesday>
-	<thursday>8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</thursday>
-	<friday>8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24</friday>
-	<saturday>11,12,13,14,15,16,17,18,19,20,21,22,23,24</saturday>
-	<sunday>11,12,13,14,15,16,17,18,19,20,21,22,23,24</sunday>
-</location>
-<location>
-	<name>Wendy's</name>
-	<monday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</monday>
-	<tuesday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</tuesday>
-	<wednesday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</wednesday>
-	<thursday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</thursday>
-	<friday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</friday>
-	<saturday>12,13,14,15,16,17,18,19,20,21,22,23,24,25</saturday>
-	<sunday>12,13,14,15,16,17,18,19,20,21,22,23,24,25</sunday>
-</location>
-<location>
-	<name>s3</name>
-	<monday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</monday>
-	<tuesday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</tuesday>
-	<wednesday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</wednesday>
-	<thursday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</thursday>
-	<friday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</friday>
-	<saturday>0</saturday>
-	<sunday>0</sunday>
-</location>
-<location>
-	<name>s3 Baguettes</name>
-	<monday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</monday>
-	<tuesday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</tuesday>
-	<wednesday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</wednesday>
-	<thursday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</thursday>
-	<friday>11.5,12,13,14,15,16,17,18,19,20,21,22,23,24,25</friday>
-	<saturday>0</saturday>
-	<sunday>0</sunday>
-</location>
-<location>
-	<name>Roth Market Fresh</name>
-	<monday>14,15,16,17,18,19,20,21,22,23</monday>
-	<tuesday>14,15,16,17,18,19,20,21,22,23</tuesday>
-	<wednesday>14,15,16,17,18,19,20,21,22,23</wednesday>
-	<thursday>14,15,16,17,18,19,20,21,22,23</thursday>
-	<friday>14,15,16,17,18,19,20,21,22,23</friday>
-	<saturday>14,15,16,17,18,19,20,21,22,23</saturday>
-	<sunday>14,15,16,17,18,19,20,21,22,23</sunday>
-</location>
-<location>
-	<name>Red Mango</name>
-	<monday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</monday>
-	<tuesday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</tuesday>
-	<wednesday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</wednesday>
-	<thursday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</friday>
-	<saturday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</saturday>
-	<sunday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</sunday>
-</location>
-<location>
-	<name>Dunkin' Donuts</name>
-	<monday>9,10,11,12,17.5,18,19,20,21,22,23,24</monday>
-	<tuesday>9,10,11,12,17.5,18,19,20,21,22,23,24</tuesday>
-	<wednesday>9,10,11,12,17.5,18,19,20,21,22,23,24</wednesday>
-	<thursday>9,10,11,12,17.5,18,19,20,21,22,23,24</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</friday>
-	<saturday>11,12,13,14,15,16,17,18,19,20,21,22,23,24,25</saturday>
-	<sunday>17.5,18,19,20,21,22,23,24</sunday>
-</location>
-<location>
-	<name>Administration Cart</name>
-	<monday>8,9,10,11,12,13,14</monday>
-	<tuesday>8,9,10,11,12,13,14</tuesday>
-	<wednesday>8,9,10,11,12,13,14</wednesday>
-	<thursday>8,9,10,11,12,13,14</thursday>
-	<friday>8,9,10,11,12,13,14</friday>
-	<saturday>0</saturday>
-	<sunday>0</sunday>
-</location>
-<location>
-	<name>Life Sciences Cart</name>
-	<monday>8,9,10,11,12,13,14.5</monday>
-	<tuesday>8,9,10,11,12,13,14.5</tuesday>
-	<wednesday>8,9,10,11,12,13,14.5</wednesday>
-	<thursday>8,9,10,11,12,13,14.5</thursday>
-	<friday>8,9,10,11,12,13,14.5</friday>
-	<saturday>0</saturday>
-	<sunday>0</sunday>
-</location>
-<location>
-	<name>Jasmine</name>
-	<monday>11,12,13,14,15,16,17,18,19,20</monday>
-	<tuesday>11,12,13,14,15,16,17,18,19,20</tuesday>
-	<wednesday>11,12,13,14,15,16,17,18,19,20</wednesday>
-	<thursday>11,12,13,14,15,16,17,18,19,20</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20</friday>
-	<saturday>12,13,14,15,16,17,18,19,20</saturday>
-	<sunday>12,13,14,15,16,17,18,19,20</sunday>
-</location>
-<location>
-	<name>J-Club</name>
-	<monday>11,12,13,14.5</monday>
-	<tuesday>11,12,13,14.5</tuesday>
-	<wednesday>11,12,13,14.5</wednesday>
-	<thursday>11,12,13,14.5</thursday>
-	<friday>11,12,13,14.5</friday>
-	<saturday>0</saturday>
-	<sunday>0</sunday>
-</location>
-<location>
-	<name>Jasmine Tea House</name>
-	<monday>11,12,13,14,15,16,17,18,19,20</monday>
-	<tuesday>11,12,13,14,15,16,17,18,19,20</tuesday>
-	<wednesday>11,12,13,14,15,16,17,18,19,20</wednesday>
-	<thursday>11,12,13,14,15,16,17,18,19,20</thursday>
-	<friday>11,12,13,14,15,16,17,18,19,20</friday>
-	<saturday>12,13,14,15,16,17,18,19,20</saturday>
-	<sunday>12,13,14,15,16,17,18,19,20</sunday>
-</location>
-</dining>
+<fsa>
+	<location>
+		<name>Bank (Health Science Center)</name>
+		<monday>9,10,11,12,13,14,15,16.5</monday>
+		<tuesday>9,10,11,12,13,14,15,16.5</tuesday>
+		<wednesday>8.5,9,10,11,12,13,14,15,16,17</wednesday>
+		<thursday>9,10,11,12,13,14,15,16.5</thursday>
+		<friday>9,10,11,12,13,14,15,16.5</friday>
+		<saturday>0</saturday>
+		<sunday>0</sunday>
+	</location>
+	<location>
+		<name>Bank (Student Activities Center)</name>
+		<monday>9,10,11,12,13,14,15,16.5</monday>
+		<tuesday>9,10,11,12,13,14,15,16.5</tuesday>
+		<wednesday>8.5,9,10,11,12,13,14,15,16,17</wednesday>
+		<thursday>0</thursday>
+		<friday>0</friday>
+		<saturday>0</saturday>
+		<sunday>0</sunday>
+	</location>
+	<location>
+		<name>FSA Services</name>
+		<monday>9,10,11,12,13,14,15,16,17</monday>
+		<tuesday>9,10,11,12,13,14,15,16,17</tuesday>
+		<wednesday>9,10,11,12,13,14,15,16,17</wednesday>
+		<thursday>9,10,11,12,13,14,15,16,17</thursday>
+		<friday>9,10,11,12,13,14,15,16,17</friday>
+		<saturday>0</saturday>
+		<sunday>0</sunday>
+	</location>
+	<location>
+		<name>HSC Bookstore</name>
+		<monday>8.5,9,10,11,12,13,14,15,16,17,18</monday>
+		<tuesday>8.5,9,10,11,12,13,14,15,16,17,18</tuesday>
+		<wednesday>8.5,9,10,11,12,13,14,15,16,17,18</wednesday>
+		<thursday>8.5,9,10,11,12,13,14,15,16,17,18</thursday>
+		<friday>8.5,9,10,11,12,13,14,15,16,17</friday>
+		<saturday>9,10,11,12,13</saturday>
+		<sunday>0</sunday>
+	</location>
+	<location>
+		<name>Seawolves Marketplace</name>
+		<monday>8.5,9,10,11,12,13,14,15,16,17,18</monday>
+		<tuesday>8.5,9,10,11,12,13,14,15,16,17,18</tuesday>
+		<wednesday>8.5,9,10,11,12,13,14,15,16,17,18</wednesday>
+		<thursday>8.5,9,10,11,12,13,14,15,16,17,18</thursday>
+		<friday>8.5,9,10,11,12,13,14,15,16,17</friday>
+		<saturday>10,11,12,13,14,15,16</saturday>
+		<sunday>10,11,12,13,14,15,16</sunday>
+	</location>
+	<location>
+		<name>Student Staffer Resources</name>
+		<monday>9,10,11,12,13,14,15,16,17</monday>
+		<tuesday>9,10,11,12,13,14,15,16,17</tuesday>
+		<wednesday>9,10,11,12,13,14,15,16,17</wednesday>
+		<thursday>9,10,11,12,13,14,15,16,17</thursday>
+		<friday>9,10,11,12,13,14,15,16,17</friday>
+		<saturday>0</saturday>
+		<sunday>0</sunday>
+	</location>
+	<location>
+		<name>Studio 97</name>
+		<monday>10,11,12,13,14,15,16,17.5</monday>
+		<tuesday>12,13,14,15,16,17,18,19,20</tuesday>
+		<wednesday>12,13,14,15,16,17,18,19,20</wednesday>
+		<thursday>10,11,12,13,14,15,16,17.5</thursday>
+		<friday>10,11,12,13,14,15,16,17.5</friday>
+		<saturday>0</saturday>
+		<sunday>0</sunday>
+	</location>
+	<location>
+		<name>The UPS Store (Union)</name>
+		<monday>0</monday>
+		<tuesday>0</tuesday>
+		<wednesday>0</wednesday>
+		<thursday>0</thursday>
+		<friday>0</friday>
+		<saturday>0</saturday>
+		<sunday>0</sunday>
+	</location>
+	<location>
+		<name>The UPS Store (Library)</name>
+		<monday>9,10,11,12,13,14,15,16,17,18</monday>
+		<tuesday>9,10,11,12,13,14,15,16,17,18</tuesday>
+		<wednesday>9,10,11,12,13,14,15,16,17,18</wednesday>
+		<thursday>9,10,11,12,13,14,15,16,17,18</thursday>
+		<friday>9,10,11,12,13,14,15,16,17,18</friday>
+		<saturday>10,11,12,13,14</saturday>
+		<sunday>10,11,12,13,14</sunday>
+	</location>
+	<location>
+		<name>University Bookstore</name>
+		<monday>8.5,9,10,11,12,13,14,15,16,17,18</monday>
+		<tuesday>8.5,9,10,11,12,13,14,15,16,17,18</tuesday>
+		<wednesday>8.5,9,10,11,12,13,14,15,16,17,18</wednesday>
+		<thursday>8.5,9,10,11,12,13,14,15,16,17,18</thursday>
+		<friday>8.5,9,10,11,12,13,14,15,16</friday>
+		<saturday>12,13,14,15,16</saturday>
+		<sunday>0</sunday>
+	</location>
+	<location>
+		<name>FSA Bookstore Liaison Office Hours</name>
+		<monday>9,10,11,12,13,14,15,16,17</monday>
+		<tuesday>9,10,11,12,13,14,15,16,17</tuesday>
+		<wednesday>9,10,11,12,13,14,15,16,17</wednesday>
+		<thursday>9,10,11,12,13,14,15,16,17</thursday>
+		<friday>9,10,11,12,13,14,15,16,17</friday>
+		<saturday>0</saturday>
+		<sunday>0</sunday>
+	</location>
+</fsa>

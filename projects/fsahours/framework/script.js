@@ -20,12 +20,12 @@ function loadXMLDoc(url) {
 	xmlhttp.send();
 }
 
-var diningAreas = new Array();
+var fsaAreas = new Array();
 
 function populateArray() {
 	var locations;
 	locations = xmlhttp.responseXML.documentElement.getElementsByTagName("location");
-	var dining;
+	var fsa;
 	for ( i = 0; i < locations.length; i++) {
 		name = locations[i].getElementsByTagName('name')[0].childNodes[0].nodeValue;
 		monday = locations[i].getElementsByTagName('monday')[0].childNodes[0].nodeValue;
@@ -36,17 +36,17 @@ function populateArray() {
 		saturday = locations[i].getElementsByTagName('saturday')[0].childNodes[0].nodeValue;
 		sunday = locations[i].getElementsByTagName('sunday')[0].childNodes[0].nodeValue;
 
-		dining = {};
-		dining.name = name;
-		dining.monday = monday;
-		dining.tuesday = tuesday;
-		dining.wednesday = wednesday;
-		dining.thursday = thursday;
-		dining.friday = friday;
-		dining.saturday = saturday;
-		dining.sunday = sunday;
+		fsa = {};
+		fsa.name = name;
+		fsa.monday = monday;
+		fsa.tuesday = tuesday;
+		fsa.wednesday = wednesday;
+		fsa.thursday = thursday;
+		fsa.friday = friday;
+		fsa.saturday = saturday;
+		fsa.sunday = sunday;
 
-		diningAreas.push(dining);
+		fsaAreas.push(fsa);
 	}
 
 }
@@ -69,11 +69,11 @@ function displayResult() {
 	var dayValue = document.getElementById("day").value;
 	var timeValue = document.getElementById("time").value;
 
-	for ( i = 0; i < diningAreas.length; i++) {
-		var hours = diningAreas[i][dayValue].split(",");
+	for ( i = 0; i < fsaAreas.length; i++) {
+		var hours = fsaAreas[i][dayValue].split(",");
 		for ( z = 0; z < hours.length; z++) {
 			if (hours[z] - timeValue == .5 || hours[z] - timeValue == 0) {
-				places.push(diningAreas[i]);
+				places.push(fsaAreas[i]);
 			}
 		}
 
@@ -151,15 +151,15 @@ function showSchedule(optional, title) {
 	document.getElementById(whereAppend).appendChild(table);
 	var times = new Array;
 	var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-	for ( i = 0; i < diningAreas.length; i++) {
-		if (text == diningAreas[i].name) {
-			times.push(diningAreas[i].monday.split(","));
-			times.push(diningAreas[i].tuesday.split(","));
-			times.push(diningAreas[i].wednesday.split(","));
-			times.push(diningAreas[i].thursday.split(","));
-			times.push(diningAreas[i].friday.split(","));
-			times.push(diningAreas[i].saturday.split(","));
-			times.push(diningAreas[i].sunday.split(","));
+	for ( i = 0; i < fsaAreas.length; i++) {
+		if (text == fsaAreas[i].name) {
+			times.push(fsaAreas[i].monday.split(","));
+			times.push(fsaAreas[i].tuesday.split(","));
+			times.push(fsaAreas[i].wednesday.split(","));
+			times.push(fsaAreas[i].thursday.split(","));
+			times.push(fsaAreas[i].friday.split(","));
+			times.push(fsaAreas[i].saturday.split(","));
+			times.push(fsaAreas[i].sunday.split(","));
 		}
 	}
 	for ( k = 0; k < days.length; k++) {
