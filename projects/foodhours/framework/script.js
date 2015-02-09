@@ -235,3 +235,12 @@ function appendtheTable(e) {
 	showSchedule("d" + num[1], e.innerHTML);
 
 }
+
+function reset()
+{
+	alert("YA");
+	document.getElementById("where").selectedIndex = 0;
+	document.getElementById("day").selectedIndex = 0;
+	document.getElementById("time").selectedIndex = 0;
+	alert("da");
+}

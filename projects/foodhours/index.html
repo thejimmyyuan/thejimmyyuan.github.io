@@ -25,27 +25,31 @@
 		<script type="text/javascript" src="framework/materialize/js/materialize.min.js"></script>
 		<div class = "row center">
 			<h3>Where to Eat?</h3>
-			<p><a class="waves-effect waves-light btn red darken-1 modal-trigger" href="#help">Help!</a></p>
-			
-	
+			<p>
+				Select either a place <strong>or</strong> a day and time.
+			</p>
+			<p>
+				<a class="waves-effect waves-light btn red darken-1 modal-trigger" href="#help">Detailed Instructions!</a>
+			</p>
+
 			<!-- Modal Structure -->
 			<div id="help" class="modal">
 				<h4>How to use</h4>
 				<p>
-				To find out the schedule of a place, simply select the place and click and submit.
-			</p>
-			<p>
-				To find out if a place is open on a certain day at a certain time, select a day and time and click submit. If you press the results, a 7-day schedule will appear.
-			</p>
+					To find out the schedule of a place, simply select the place and click and submit.
+				</p>
+				<p>
+					To find out if a place is open on a certain day at a certain time, select a day and time and click submit. If you press the results, a 7-day schedule will appear.
+				</p>
 				<div class="action-bar">
 					<a href="#" class="waves-effect waves-light red darken-1 btn-flat modal-action modal-close">Got it!</a>
 				</div>
 			</div>
-			
+
 		</div>
 		<form>
 			<div class = "row">
-				<div class="col s12 m4 l4 offset-m1 offset-l1">
+				<div class="col s12 m4 l4 offset-m4 offset-l4">
 					<label>Where</label>
 					<select id = "where">
 						<option value="-1" selected>&nbsp;</option>
@@ -86,7 +90,12 @@
 						<option value="">Jasmine Tea House</option>
 					</select>
 				</div>
-				<div class="col s12 m3 l3">
+			</div>
+			<div class = "row">
+				<h4 class= "center">Or</h4>
+			</div>
+			<div class = "row">
+				<div class="col s12 m4 l4 offset-m4 offset-l4">
 					<label>Day</label>
 					<select id = "day">
 						<option value="-1" selected>&nbsp;</option>
@@ -100,7 +109,9 @@
 
 					</select>
 				</div>
-				<div class="col s12 m3 l3">
+			</div>
+			<div class = "row">
+				<div class="col s12 m4 l4 offset-m4 offset-l4">
 					<label>Time</label>
 					<select id = "time">
 						<option value="-1" selected>&nbsp;</option>
@@ -128,10 +139,12 @@
 
 					</select>
 				</div>
-			</div>
+			</div></div>
+
 			<div class = "row">
 				<div class = "col s12" style = "text-align:center;">
 					<a class="waves-effect waves-light red darken-1 btn-large" onclick="check();">Submit</a>
+
 				</div>
 			</div>
 
@@ -151,7 +164,7 @@
 				$('.collapsible').collapsible({
 					"accordion" : false
 				});
-			 $('.modal-trigger').leanModal();
+				$('.modal-trigger').leanModal();
 			});
 
 		</script>
