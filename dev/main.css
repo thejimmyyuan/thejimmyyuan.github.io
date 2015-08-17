@@ -1,0 +1,57 @@
+html,body
+{
+    padding:0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.content
+{
+    color:white;
+
+
+    background: -webkit-linear-gradient(90deg, #f46b45 10%, #eea849 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #f46b45 10%, #eea849 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #f46b45 10%, #eea849 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #f46b45 10%, #eea849 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #f46b45 10%, #eea849 90%); /* W3C */
+
+    width:100%;
+    height:100%;
+    -webkit-box-shadow: inset 0 0 0 1em rgba(255,255,255,1);
+    -moz-box-shadow: inset 0 0 0 1em rgba(255,255,255,1);
+    box-shadow: inset 0 0 0 1em rgba(255,255,255,!);
+}
+.name
+{
+    font-size:3em;
+    font-weight:100;
+}
+.mini
+{
+    font-size:2em;
+    font-weight: 100;
+}
+.button
+{
+    display:inline-block;
+    color:white;
+    font-weight:100;
+    font-size:1.2em;
+    padding:.2em 1em;
+    border:solid thin white;
+    transition:.4s ease-in;
+    cursor:pointer;
+    margin:.2em;
+}
+.button:hover
+{
+    background:rgba(255, 255, 255,1);
+    color:#212121;
+
+}
+.center
+{
+    margin-left:auto;
+    margin-right:auto;
+}
