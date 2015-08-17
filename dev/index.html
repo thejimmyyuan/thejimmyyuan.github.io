@@ -18,13 +18,35 @@
         <p class = "name">Jimmy Yuan is a Web Developer from NYC</p>
         <p class = "mini">A full site is in the works :)</p>
         <div>
-            <a class = "button">Email</a>
-            <a class = "button">LinkedIn</a>
-            <a class = "button">Resume</a>
-            <a class = "button">Projects</a>
+            <a class = "button" href = "mailto:thejimmyyuan@gmail.com">Email</a>
+            <a class = "button" href = "https://www.linkedin.com/in/thejimmyyuan">LinkedIn</a>
+            <a class = "button" href = "http://thejimmyyuan.com/framework/jimmyyuanresume.pdf">Resume</a>
+            <a class = "button modal-trigger" href = "#project-directory">Projects</a>
         </div>
       </div>
-</div>
+    <div class="modal-content">
+      <div id="project-directory" class="modal">
+      <h4>Projects</h4>
+      <p>Things worth noting</p>
 
+      <div class="collection">
+        <a href="http://thejimmyyuan.com/previous/" class="collection-item">Previous Iteration of this Website</a>
+        <a href="http://thejimmyyuan.com/projects/windows/" class="collection-item">Windows 7 Aero UI</a>
+        <a href="http://thejimmyyuan.com/projects/Windoges8/" class="collection-item">Windows 8 UI</a>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<script>
+
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+
+</script>
 </body>
 </html>
