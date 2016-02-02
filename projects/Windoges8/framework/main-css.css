@@ -11,7 +11,7 @@ html, body, .wrapper {
 	overflow-y: hidden;
 }
 html {
-	background: url(images/bluemountains.jpg) no-repeat center center fixed;
+	background: url(images/forest.jpg) no-repeat center center fixed;
 	/*background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%); /* Chrome 10+, Saf5.1+ */
 	/*background: -moz-linear-gradient(90deg, #283048 10%, #859398 90%); /* FF3.6+ */
 	/*background: -ms-linear-gradient(90deg, #283048 10%, #859398 90%); /* IE10 */

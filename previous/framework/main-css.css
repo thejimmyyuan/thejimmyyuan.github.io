@@ -4,7 +4,7 @@ html, body{
 	margin: 0;
 	width: 100%;
 	height: 100%;
-	
+
 }
 /* M E N U */
 .navbar
@@ -36,7 +36,7 @@ color:#212121;
 li a{
 	transition:.3s ease-in;
 }
-li a:hover 
+li a:hover
 {
 	background:#0288D1;
 	color:#fff;
@@ -67,7 +67,7 @@ li a:hover
 .intro
 {
 	margin-top:15%;
-	
+
 }
 .about
 {
@@ -78,7 +78,7 @@ li a:hover
 {
 	margin-top:10%;
 	color:#fff;
-	 	
+
 }
 .com{
 	z-index:1;
@@ -116,13 +116,13 @@ li a:hover
 	border:solid thin white;
 	cursor:pointer;
 	transition:.4s ease-in;
-	
+
 }
 .projectCard:hover{
 	background:white;
 	color:#212121;
 	transform:scale(1.1);
-	
+
 }
 /* M I S C */
 #top
@@ -142,7 +142,7 @@ li a:hover
 #top:hover
 {
 	color:#212121;
-	
+
 }
 .button
 {
@@ -166,9 +166,9 @@ li a:hover
 	display:inline-block;
 	font-weight:300;
 	padding-top:3em;
-	
+
 }
-.footerlink 
+.footerlink
 {
 	color:white;
 }
@@ -192,7 +192,7 @@ li a:hover
 {
 	background:rgba(255, 255, 255,1);
 	color:#212121;
-	
+
 }
 /* O V E R R I D E */
 #sidenav-overlay
@@ -230,7 +230,7 @@ h2
 }
 .turquoise
 {
-	background:#1abc9c;	
+	background:#1abc9c;
 		min-height:100%;
 	height:auto;
 	margin-bottom:0;
