@@ -1,0 +1,120 @@
+/* M E H  R E S E T */
+html, body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+
+}
+main{
+	height:100%;
+}
+/* M E N U */
+.navbar
+{
+	background:#fff;
+	position:fixed;
+	color:#333;
+	z-index:99;
+	box-shadow:0 0 0 0;
+	padding:0 20%;
+}
+.navbar a
+{
+color:#333;
+}
+.side-nav
+{
+	z-index:99;
+}
+.menu-inside
+{
+	padding:0 1em;
+}
+nav .brand-logo{
+	font-weight:100;
+
+}
+nav li a{
+	right:20%;
+	transition:.3s ease-in;
+}
+li a:hover
+{
+	background:#0288D1;
+	color:#333;
+}
+/* C O N T E N T */
+.content{
+	min-height:100%;
+	height:100%;
+
+}
+.row
+{
+
+}
+#splash
+{
+
+	min-height:100%;
+	height:100%;
+	background:url('images/receptionbg.png');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align:center;
+
+}
+
+.name
+{
+	letter-spacing:.05em;
+	font-weight:900;
+	padding-top:2em;
+	color:rgba(0,0,0,5);
+}
+#learn-more{
+	display:inline-block;
+	box-shadow:0 0 0 0;
+}
+#about-name{
+	font-family:roboto;
+	font-weight:100;
+	padding-top:2em;
+}
+#reviews{
+	padding-top:3em;
+}
+/* O V E R R I D E */
+#sidenav-overlay
+{
+	z-index:0;
+}
+h1
+{
+
+	padding-top:1em;
+}
+h2
+{
+	font-weight:300;
+	font-size:2em;
+	padding:1em;
+}
+h4
+{
+	font-weight:600;
+	font-family:roboto;
+}
+
+/* G E N E R I C */
+.center
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+.left{
+	text-align:left;
+}
