@@ -4,7 +4,7 @@ html, body{
 	margin: 0;
 	width: 100%;
 	height: 100%;
-	background-color:#FFF5DE;
+background-color:rgb(249,249,249);
 
 }
 main{
@@ -76,6 +76,9 @@ li a:hover
 	padding-top:2em;
 	color:rgba(0,0,0,5);
 }
+#about{
+	background:white;
+}
 #learn-more{
 	display:inline-block;
 	box-shadow:0 0 0 0;
@@ -88,6 +91,7 @@ li a:hover
 #reviews{
 	padding-top:3em;
 }
+#contact}
 /* O V E R R I D E */
 #sidenav-overlay
 {
