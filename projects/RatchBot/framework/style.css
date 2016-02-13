@@ -1,0 +1,157 @@
+/* M E N U */
+#menu{
+    dbackground:#000000;
+    dbackground:#263238 ;
+    dbackground:transparent;
+    background:#fff;
+    padding:1em 0;
+
+}
+.uk-navbar-nav>li>a[href='#']{
+    cursor:pointer;
+}
+#brand-logo
+{
+    font-family: 'Roboto', sans-serif;
+    font-size:2em;
+    font-weight: 100;
+    color:#333;
+}
+#splash{
+    background:url('images/newyear.png');
+    dbackground: #ECE9E6; /* fallback for old browsers */
+    dbackground: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+    dbackground: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align:center;
+}
+
+.name{
+    padding-top:10%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight:100;
+    line-height:2em;
+    font-size:3em;
+    color:#333;
+}
+#slogan{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top:1em;
+    font-weight:100;
+    font-size:2em;
+    color:#fff;
+}
+.fancy-button
+{
+    font-family: 'Roboto', sans-serif;
+    margin-top:1em;
+    margin-bottom:5em;
+    padding:.8em;
+    display:inline-block;
+    cursor:pointer;
+    text-align:center;
+    font-size:3em;
+    font-weight: 100;
+    border-style:solid;
+    border-width:1px;
+    transition:.3s ease-in;
+    text-decoration: none;
+    color:#fff;
+}
+.fancy-button:hover{
+    background:#cfd8dc;
+    transform: translate(0,10px);
+    color:white;
+    text-decoration: none;
+}
+.fancy-button-dark
+{
+    font-family: 'Roboto', sans-serif;
+    margin-top:1em;
+    margin-bottom:2em;
+    padding:.8em;
+    display:inline-block;
+    cursor:pointer;
+    text-align:center;
+    font-size:3em;
+    font-weight: 100;
+    border-style:solid;
+    border-width:1px;
+    transition:.3s ease-in;
+    text-decoration: none;
+    color:#333;
+}
+.fancy-button-dark:hover{
+    background:#cfd8dc;
+    transform: translate(0,10px);
+    color:#333;
+    text-decoration: none;
+}
+.custom-header{
+    padding-top:2em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight:100;
+    font-size:4em;
+    color:#333;
+}
+.custom-subheader{
+    font-family: 'Roboto', sans-serif;
+    padding-top:1em;
+    text-align: center;
+    font-weight:100;
+    font-size:2em;
+    color:#333;
+}
+.professional-header{
+    padding-top:1em;
+    margin-bottom:5%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight:100;
+    font-size:4em;
+    color:#fff;
+}
+.content{
+    margin-top:5em;
+}
+.flow-text
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight:100;
+    font-size:1.5em;
+
+}
+#portrait{
+    width:100%;
+}
+#about
+{
+    background:url('images/newyear.png');
+    text-align:center;
+}
+#pro{
+    background:url('images/darkhex.png');
+    text-align:center;
+    color:#fff;
+}
+#proj{
+    background-color:rgb(249,249,249);
+    text-align:center;
+}
+#contact{
+    text-align:center;
+}
+#side-nav{
+    background:black;
+}
+.contact-icon{
+    display:inline-block;
+    font-size:3em;
+    padding:1em;
+}
+.center{
+    margin-left:auto;
+    margin-right:auto;
+}
