@@ -135,6 +135,10 @@
     background:#263238;
     color:white;
 }
+.com-logo
+{
+    padding:3em .5em;
+}
 .bpigpic {
     display: block;
     margin:1em;
