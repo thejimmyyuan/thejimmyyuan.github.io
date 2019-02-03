@@ -1,9 +1,7 @@
-$(document).ready(function() {
-	$('#fullpage').fullpage();
-});
+
 $(function(){
     $("#slogan").typed({
-      strings: ["Front End Developer, ^1000Photographer, ^1000Traveler"],
+      strings: ["Technologist, ^1000Photographer, ^1000Real"],
       typeSpeed: 0,
       showCursor: false
     });
