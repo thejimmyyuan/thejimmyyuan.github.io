@@ -6,17 +6,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css" />
-      <!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" /> -->
       <link rel="stylesheet" href="assets/css/style.css" />
-      <!-- <link rel="stylesheet" href="assets/css/timeline/style.css" /> -->
-      <!--     <link rel="stylesheet" href="assets/css/timeline/timelify.css" /> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-      <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script> -->
       <script src="assets/js/script.js"></script>
-      <!--     <script src="assets/js/timeline/jquery.timelify.js"></script> -->
       <link rel="shortcut icon" href="images/shibe.png">
       <link rel="apple-touch-icon" href="images/shibe.png">
    </head>
@@ -30,11 +25,11 @@
             <div class="uk-position-center">
                <h2 id="name">Jimmy Yuan</h2>
                <h2 id="slogan"></h2>
-               <a href="#about" class="fancy-button" data-uk-smooth-scroll><i class="uk-icon-caret-down"></i></a>
+               <a href="#about" class="fancy-button" uk-icon="icon: triangle-down; ratio: 1.5" uk-scroll></a>
             </div>
          </div>
       </div>
-      <div class="uk-section section">
+      <div id = "about" class="uk-section section">
          <div class="uk-child-width-1-2@s container" uk-grid>
             <div class="uk-panel" uk-scrollspy="cls: uk-animation-slide-left; repeat: true"><img class="com-logo" src="assets/images/jimmy2.jpg" id="portrait"></div>
             <div class="uk-panel" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
