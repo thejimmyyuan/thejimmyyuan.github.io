@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto';
 }
 #hero {
-    background: linear-gradient( rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(../images/1145thave.jpg) no-repeat fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(../images/1145thave-min.jpg) no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
