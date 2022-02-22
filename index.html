@@ -1,97 +1,57 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Jimmy Yuan NYC</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css" />
-      <link rel="stylesheet" href="assets/css/style.css" />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-      <script src="assets/js/script.js"></script>
-      <link rel="shortcut icon" href="images/shibe.png">
-      <link rel="apple-touch-icon" href="images/shibe.png">
-   </head>
-   <body>
-      <div id="hero" class="uk-section section" uk-height-viewport>
-         <div id="introbox">
-            <span class="l1"></span>
-            <span class="l2"></span>
-            <span class="l3"></span>
-            <span class="l4"></span>
-            <div class="uk-position-center">
-               <h2 id="name">Jimmy Yuan</h2>
-               <h2 id="slogan"></h2>
-               <a href="#about" class="fancy-button" uk-icon="icon: triangle-down; ratio: 1.5" uk-scroll></a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jimmy Yuan NYC</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+   <script src="assets/script.js"></script>
+   <span class="l1"></span>
+   <span class="l2"></span>
+   <span class="l3"></span>
+   <span class="l4"></span>
+   <div id = "hero">
+      <div class = "flex justify-center items-center h-screen">
+         <div id = "text-container" >
+            <div id = "typed-strings">
+               <p>Jimmy Yuan</p> 
+            </div>
+            <span id="typed" class = "inline-block align-middle name-text"></span>
+            <br />
+            <div class = "inline-block align-middle slogan-text">
+               <a href="about.html"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+                </svg> About</a>
+               |
+               <a target ="_blank" href="https://www.instagram.com/thejimmyyuan/"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg> Photography</a>
+               |
+               <a target ="_blank" href="https://www.linkedin.com/in/thejimmyyuan/"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg> LinkedIn</a>
+               |
+               <a target ="_blank" href="assets/jyresume.pdf"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg> Resume</a>
             </div>
          </div>
       </div>
-      <div id = "about" class="uk-section section">
-         <div class="uk-child-width-1-2@s container" uk-grid>
-            <div class="uk-panel" uk-scrollspy="cls: uk-animation-slide-left; repeat: true"><img class="com-logo" src="assets/images/jimmy2.jpg" id="portrait"></div>
-            <div class="uk-panel" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-               <h2 class="uk-text-left thin-text">Hello Friends, I'm Jimmy!</h2>
-               <p class="uk-text-left thinish-text">I'm currently employed at Spotify AB as a Web Solutions Specialist/Solutions Engineer on the Partnerships Team. There I provide technical insights in web related work as well as implementing policies on web projects!</p>
-               <p class="uk-text-left thinish-text">I am based in New York City, but always up to travel!</p>
-               <p class="uk-text-left thinish-text">Other Interests include:
-               <ul class="uk-list uk-list-bullet">
-                  <li class = "thinish-text">SmartCities</li>
-                  <li class = "thinish-text">Urban Mobility</li>
-                  <li class = "thinish-text">Transit</li>
-                  <li class = "thinish-text">Aviation</li>
-                  <li class = "thinish-text">Photography</li>
-                  <li class = "thinish-text">Table Tennis</li>
-               </ul>
-               </p>
-            </div>
-         </div>
-      </div>
-      <div id="pro" class="uk-section section">
-         <div class="container">
-            <h1 class="white-text thin-text">Work Experience</h1>
-            <div class="uk-child-width-1-4@s uk-grid-collapse uk-text-center" uk-grid>
-               <div uk-tooltip="title: Web Solutions Specialist">
-                  <img class="com-logo" width="50%" src="assets/images/logos/spotify.png" alt="Spotify">
-               </div>
-               <div uk-tooltip="title: Software Engineer">
-                  <img class="com-logo" width="50%" src="assets/images/logos/mc5.png" alt="MasterCard">
-               </div>
-               <div uk-tooltip="title: Various Technical Roles">
-                  <img class="com-logo" width="50%" src="assets/images/logos/sbsvg.png" alt="Stony Brook University">
-               </div>
-               <div  uk-tooltip="title: Installations Intern">
-                  <img class="com-logo" width="50%" src="assets/images/logos/bb2.png" alt="Bloomberg">
-               </div>
-            </div>
-         </div>
-      </div>
-      <div id="photo" class="uk-section section">
-         <div class = "container">
-            <h1 class="thin-text center">Photography</h1>
-
-            <!-- LightWidget WIDGET -->
-         <!--    <script src="http://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-            <iframe src="http://lightwidget.com/widgets/dc8d1351b0a05ab8bcb93e6228a694b5.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> -->
-           <!--  <iframe src="https://instaembedder.com/gallery-v2.php?width=150&cols=3&rows=3&margin=8&color=gray&image_border=8&frame_color=white&cid=9834&" frameborder="0" width="525" height="582" ></iframe> -->
-           <!-- GrahamSnaps Widget Embed -->
-<div id="gs-grid" class="gs-ZnfkcycyUG1roQ"></div>
-<script>(function(a,b,c,d,e){if(!(e in a)){a.gs=function(){a.gs.q.push(arguments);};a.gs.q=[];}var f=b.createElement(c);f.src=d;f.async=!0;var g=b.getElementsByTagName(c)[0];g.parentNode.insertBefore(f,g);})(window,document,"script","https://cdn.grahamsnaps.com/js/grid.js","gs");gs("Grid", "ZnfkcycyUG1roQ");</script>
-         </div>
-      </div>
-      <div class="uk-section section" id="contact">
-         <div class="uk-container uk-container-center">
-            <h1 class="thin-text white-text" style="color:white;">Contact</h1>
-            <h2 class="thin-text" style="color:white;">Have any questions? Or want to get in contact? Reach out!</h2>
-            <div>
-               <a class="contact-icon" uk-icon="icon: mail; ratio: 3.5" href="mailto:thejimmyyuan@gmail.com" target="_blank"></a>
-               <a class="contact-icon" uk-icon="icon: linkedin; ratio: 3.5" href="https://www.linkedin.com/in/thejimmyyuan/" target="_blank"></a>
-               <a class="contact-icon" uk-icon="icon: instagram; ratio: 3.5" href="https://www.instagram.com/thejimmyyuan/" target="_blank"></a>
-               <a class="contact-icon" uk-icon="icon: file-edit; ratio: 3.5" href="http://thejimmyyuan.com/assets/jimmyyuanresume.pdf" target="_blank"></a>
-            </div>
-         </div>
-      </div>
-   </body>
+   </div>
+   <script>
+      var typed = new Typed('#typed', {
+         stringsElement: '#typed-strings',
+         typeSpeed: 80,
+         showCursor: false,
+      });
+    </script>
+  </body>
 </html>
