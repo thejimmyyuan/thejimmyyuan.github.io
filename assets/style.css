@@ -2,13 +2,18 @@ body
 {
     margin:0;
     padding:0;
-    background-color: #ecebe6;
+    /* background-color: #ecebe6; */
+    color:#666;
+    background: rgb(252,252,252);
+    background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(236,235,230,1) 100%);
 }
 #hero
 {
     min-height:100%;
-    background-color: #ecebe6;
+    /* background-color: #ecebe6; */
     margin:0;
+    background: rgb(252,252,252);
+    background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(236,235,230,1) 100%);
 }
 .name-text
 {
@@ -16,7 +21,7 @@ body
     font-family: 'DM Sans', sans-serif;
     color:#666;
     font-weight: bold;
-    text-align: right;
+    /* text-align: right; */
 }
 .current-text
 {
@@ -24,6 +29,11 @@ body
     font-family: 'Red Hat Mono', monospace;
     color:#666;
     text-align: right;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
 }
 .menu-text
 {
@@ -31,6 +41,7 @@ body
     font-family: 'Work Sans', sans-serif;
     color:#666;
     text-align: center;
+    animation: 1s slide-up;
 }
 .icon
 {
@@ -43,6 +54,47 @@ body
 #text-box
 {
     text-align: right;
+}
+#about
+{
+    /* background-color: #fcfcfc; */
+    background: rgb(252,252,252);
+    background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(236,235,230,1) 100%);
+}
+.small
+{
+    font-size:16px;
+}
+.hr-custom
+{
+    margin-top:32px;
+    margin-bottom:32px;
+}
+.image-holder
+{
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+.mini-header
+{
+    font-size:32px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+p{
+    font-size:20px;
+    font-family: 'DM Sans', sans-serif;
+}
+.about-text
+{
+    margin-top:10px;
+}
+.about-photo
+{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
 }
 /* A N I M A T I O N */
 
@@ -131,3 +183,41 @@ body
         background: #ecebe6;
     }
 }
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @keyframes slide-up {
+    from {
+      margin-top: 100%;
+      height: 300%; 
+    }
+  
+    to {
+      margin-top: 0%;
+      height: 100%;
+    }
+  }
