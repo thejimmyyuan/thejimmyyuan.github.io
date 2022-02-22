@@ -16,12 +16,19 @@ body
     font-family: 'DM Sans', sans-serif;
     color:#666;
     font-weight: bold;
-    text-align: center;
+    text-align: right;
 }
-.slogan-text
+.current-text
 {
     font-size: 36px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Red Hat Mono', monospace;
+    color:#666;
+    text-align: right;
+}
+.menu-text
+{
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
     color:#666;
     text-align: center;
 }
@@ -33,12 +40,9 @@ body
 {
     display:none;
 }
-#text-container
+#text-box
 {
-    /* background-color: red;
-    margin-left:50%;
-    margin-bottom:25%;
-    position:relative; */
+    text-align: right;
 }
 /* A N I M A T I O N */
 
