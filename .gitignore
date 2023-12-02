@@ -4,6 +4,7 @@
 # Misc
 /public
 .github
+doc
 
 # Intellij
 /.idea
