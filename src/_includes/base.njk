@@ -14,26 +14,8 @@
     <link rel="apple-touch-icon" href="assets/images/shibe.png">
   </head>
   <body>
-
-   <div id = "hero">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-      <div class = "container-custom">
-        <span class="l1"></span>
-        <span class="l2"></span>
-        <span class="l3"></span>
-         <div id = "" >
-            <div id = "text-box">
-               <span id = "typed-strings" > 
-                  <span>{{ name }}</span>
-               </span>
-               <span id="typed" class = "name-text"></span>      
-               <p class = "current-text">{{ subtitle }}</p>
-            </div>
-            <div class="content">
-              {{ content | safe }}
-            </div>
-         </div>
-      </div>
+   <div class="container-custom">
+      {{ content | safe }}
    </div>
    <script>
       var typed = new Typed('#typed', {

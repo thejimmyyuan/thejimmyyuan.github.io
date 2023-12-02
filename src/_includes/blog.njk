@@ -1,26 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto:wght@100;300;500&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/images/shibe.png">
-    <link rel="apple-touch-icon" href="assets/images/shibe.png">
-  </head>
-  <body>
-   <div id = "hero">
-      <div class = "container-custom">
-            <div class="content">
-              {{ content | safe }}
-            </div>
-         </div>
-      </div>
-   </div>
-  </body>
-</html>
+---
+layout: base.njk
+---
+<div class="content">
+  {{ content | safe }}
+</div>
