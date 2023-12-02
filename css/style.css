@@ -28,11 +28,11 @@ body {
     color:#666;
     font-weight:100;
     margin-top:-.8em;
-    animation: fadeIn linear 2s;
-    -webkit-animation: fadeIn linear 2s;
-    -moz-animation: fadeIn linear 2s;
-    -o-animation: fadeIn linear 2s;
-    -ms-animation: fadeIn linear 2s;
+    animation: fadeIn linear 1s;
+    -webkit-animation: fadeIn linear 1s;
+    -moz-animation: fadeIn linear 1s;
+    -o-animation: fadeIn linear 1s;
+    -ms-animation: fadeIn linear 1s;
 }
 .about-text {
     font-size: 32px;
@@ -66,7 +66,6 @@ body {
 .about-photo {
     width:500px;
 }
-
 
 
 
