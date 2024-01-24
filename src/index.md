@@ -24,7 +24,7 @@ layout: "base.njk"
                 <img class = "about-photo" src = "../assets/images/profilepic.jpg">
             </div>
             <div class = "about-content">
-                <p>Currently @ Spotify doing technical solutions work for business development. This includes partner integrations, writing/reviewing RFCs, and developing internal web tools.</p>
+                <p>Currently @ Spotify doing technical solutions work for business development. This includes partner integrations, writing/reviewing RFCs, and developing internal web tools to automate work.</p>
                 <br />
                 <p>Check out my: </p>
                 <ul class="list-disc menu-list">
